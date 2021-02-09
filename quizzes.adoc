@@ -1,0 +1,18 @@
+
+=== Exam and Quizzes
+
+<!---
+Quizzes will be given during lab times on the days posted on the
+link:#_schedule[schedule]. 
+
+There will be one final project for the semester. Details and dates will be
+released during the semester.  Please read the section on
+link:#_accommodations[accomodations] if you are in need of extra time.  You
+must inform us of accommodations or conflicts at least 2 weeks in advance of
+the exam.
+
+Quizzes will be open book and open computer. You will be given sample questions
+beforehand to help you study. *Warning!* Do not rely heavily on your notes
+for quizzes. You will need to have concepts memorized in order to finish
+within the time limit.
+--->

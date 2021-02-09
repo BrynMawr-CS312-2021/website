@@ -1,0 +1,85 @@
+include::header.adoc[]
+
+:title: Assignment 0: Hello CS312!
+:Author Initials: ASN
+:Date:    2020-02-07
+:Revision: 0.1
+
+= {title}
+
+**Due Tuesday, February 23, before midnight**
+
+The goals for this assignment are:
+
+* Sign-up for github
+* Join slack
+* Look at the website!
+* Setup your graphics development environment
+* Build and write simple C++ programs
+
+:sectnums:
+
+= Sign-up for github
+
+Please go to github.com and register. We will use github for assignments and 
+projects this semester. Email the instructor (anormoyle at brynmawr.edu) with 
+your github username. 
+
+We have made the decision to open-source our assignments and projects for this 
+class. The benefit of this decision is that you will have a portfolio of work that 
+you can share with employers by the end of the semester.  
+
+One question people often have about open source is whether it will encourage 
+cheating. At Bryn Mawr and Haverford, we have an honor code and it's generally not 
+an issue. Honor code aside, remember also that if you do copy other's work,   
+it will be in plain view for anyone to see! 
+
+You will discover that there are many open-source resources for 
+graphics online. Some of it is boiler plate and intended to be re-used. 
+In general, if you use someone else's functions, classes, math implementations, or 
+algorithms, you must attribute them! 
+
+= Join slack
+
+I will be inviting you all to join the course slack channel. In the
+introduction channel, say and introduce yourself:
+
+* What is your preferred name and pronouns?
+* Tell us your favorite food. :)
+
+= Read the class web pages 
+
+Start by reading through **all** of the link:../index.html[class webpage]!
+Bookmark this page on your browser, or use some other method that helps you 
+keep this information handy. All course materials and announcements will be 
+posted on the course webpage! 
+
+Pay special attention to the link:../index.html#_schedule[Schedule]. 
+
+= Setup graphics
+
+Fork the repository at link:https://github.com/BrynMawr-CS312-2021/getting-started[getting-started] 
+into your own github account. Follow the instructions in the readme to build the demo. 
+
+IMPORTANT: If you run into any problems setting this up, do not hesitate to ask for helps! You can 
+email or ask on slack.
+
+We will also setup graphics in the labs at Bryn Mawr. However, having the course tools setup 
+on your own computer will be more convenient. 
+
+We also recommend you install Blender and Gimp:
+
+* link:blender.org[Blender]: A 3D modeling tool with photorealistic rendering features. Blender can be used to view and create 3D models. We will use this in class demos and you may find it useful (and fun) to 
+use yourself. 
+* link:gimp.org[Gimp]: An open source image program, similar to Photoshop. Gimp can be used to view and edit images, including textures.
+
+= C++ warm-up 
+
+If you're used to programming in Java, modern C++ will be similar. Let's write some basic 
+C++ programs to get our bearings.
+
+Fork the repository at link:https://github.com/BrynMawr-CS312-2021/cpp-warmup[cpp-warmup]. 
+Complete the programs and push them back to github.
+
+If you have questions about using github and programming in C++, we will have
+a git/C++ workshop during our first lab on February 18th, at 2:30pm.

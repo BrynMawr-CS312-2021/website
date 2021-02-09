@@ -1,0 +1,132 @@
+
+
+[cols="1,2,6a", options="header"]
+|===
+| Week 
+| Date 
+| Topics & ToDo
+
+//-----------------------------
+|1
+|Feb 15,18
+|*3D Graphics Fundamentals, C++* anchor:intro[]
+
+* Lab: Github and C++ workshop 
+* (Optional) link:https://www.udemy.com/course/free-learn-c-tutorial-beginners/[C++ Course]
+* (Optional/Fun) link:https://www.youtube.com/watch?v=TPrnSACiTJ4[Blender Beginner Tutorial]
+
+//-----------------------------
+|2
+|Feb 22,25
+|*Pixmap graphics* anchor:pixmap[]
+
+* Topics: pixels, images, color, compositing, C++ pointers and arrays
+* Read: link:https://raytracing.github.io/books/RayTracingInOneWeekend.html[Ray Tracing in one weekend]: Sec 2
+* link:https://www.cplusplus.com/doc/tutorial/arrays/[C++ arrays] 
+* link:asst00.html[Assignment 0] is due February 25 at midnight
+* Lab: Office Hours
+
+//-----------------------------
+|3
+|March 1,4
+|*Raytracing*  anchor:raytrace[]
+
+* Topics: The ray tracing algorithm, points and vectors, the GLM library, intersection testing
+* Read: link:https://raytracing.github.io/books/RayTracingInOneWeekend.html[Ray Tracing in one weekend]: Sec 4,5
+* Read: link:http://immersivemath.com/ila/index.html[Immersive Linear Algebra]:Chapter 2,3
+* (Optional) Real-time Rendering, Section 22.6 (Ray/Sphere Intersection)
+* (Optional) Real-time Rendering, Section 22.7 (Ray/Box Intersection)
+* (Optional) Real-time Rendering, Section 22.8 (Ray/Triangle Intersection)
+* link:asst01.html[Assignment 1] is due March 4 at midnight
+* Lab: Office Hours
+
+//-----------------------------
+|4
+|March 8,11
+|*Raytracing* 
+
+* Topics: materials, lights, C++ standard template library 
+* Read: link:https://raytracing.github.io/books/RayTracingInOneWeekend.html[Ray Tracing in one weekend]: Sec 6-10 
+* link:asst02.html[Assignment 2] is due March 11 at midnight
+* Lab: Office Hours
+
+//-----------------------------
+|5
+|March 15,18
+|*Real-time rendering with openGL* anchor:opengl[]
+
+* Topics: Event loops and callbacks, graphics pipeline, shaders (lights and materials), buffers
+* Read link:https://antongerdelan.net/opengl/hellotriangle.html[Hello Triangle]
+* *Lab: Math jam*: Points, vectors, dot product, intersection testing
+* link:asst03.html[Assignment 3] is due March 18 at midnight
+
+//-----------------------------
+|6
+|March 22,25
+|*Coordinate frames, transformations, and projections* anchor:coordinates[]
+
+* Topics: homogeneous coordinates, transformation matrices
+* Read link:https://learnopengl.com/Getting-started/Coordinate-Systems[OpenGL Coordinate Systems] 
+* Read link:http://immersivemath.com/ila/ch06_matrices/ch06.html[Immersice Linear Algebra]: Chapter 6 (Matrices)
+* *Lab presentations*: Points, vectors, dot product, intersection testing
+
+//-----------------------------
+|7
+|March 29, April 1
+|*Spring Pause*
+
+* *No lab/class this week*
+* link:asst04.html[Assignment 4] is due April 1 at midnight
+
+//-----------------------------
+|8
+|April 5,8
+|*Meshes* anchor:meshes[]
+
+* Topics: mesh representations, texturing, procedural techniques, 3D modeling
+* *Lab: Math jam*: Coordinate frames, Transformations, projections
+* link:asst05.html[Assignment 5] is due April 8 at midnight
+
+//-----------------------------
+|9
+|April 12,15
+|*Particle systems* anchor:particlesystem[]
+
+* Billboards, sprites, physically-based simulation, alpha blending and transparency
+* *Lab: Presentations*: Coordinate frames, transformation, projections
+* link:asst06.html[Assignment 6] is due April 15 at midnight
+
+//-----------------------------
+|10
+|April 19,22
+|*Ray marching* anchor:raymarch[]
+
+* Volumetric rendering, constructive solid geometry, shadertoy
+* link:asst07.html[Assignment 7] is due April 22 at midnight
+* Lab: Office Hours
+
+//-----------------------------
+|11
+|April 26,29
+|*Advanced Shaders*
+
+* Potential topics: noise, non-photorealistic rendering, glow, BRDFs, HDR
+* Lab: Office Hours
+* *Project proposals due*
+
+//-----------------------------
+|12
+|May 3,6
+|*Advanced Shaders*
+
+* Potential topics: noise, non-photorealistic rendering, glow, BRDFs
+* Lab: Project introductions
+
+//-----------------------------
+|13
+|May 10,13
+|*Advanced topics*
+
+* Lab: Project status report
+
+|===

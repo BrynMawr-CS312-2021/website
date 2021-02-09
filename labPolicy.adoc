@@ -1,0 +1,16 @@
+=== Labs
+
+Because class is remote this semester, labs will not be formal meeting times
+as they normally would be.
+
+Most weeks, labs will be additional office hour time. I expect that you will run into 
+problems while working on your assignments. Please don't hesitate to come to me 
+with these problems. That's what I'm here for. 
+
+Some weeks, we will have *math jams* in lab, which will be timed problem sets which you 
+will solve in teams. This is a low stakes way to learn the 3D mathematics you need 
+for graphics programming and will hopefully be fun. The week following a math jam 
+will be for you to present your answers to the jam problems the week before. 
+
+At the end of the semester, we will use lab to share weekly progress on our projects. 
+
