@@ -61,8 +61,8 @@ Pay special attention to the link:../index.html#_schedule[Schedule].
 Fork the repository at link:https://github.com/BrynMawr-CS312-2021/getting-started[getting-started] 
 into your own github account. Follow the instructions in the readme to build the demo. 
 
-IMPORTANT: If you run into any problems setting this up, do not hesitate to ask for helps! You can 
-email or ask on slack.
+IMPORTANT: If you run into any problems setting this up, do not hesitate to ask for help! Contact me by email or 
+on Slack. 
 
 We will also setup graphics in the labs at Bryn Mawr. However, having the course tools setup 
 on your own computer will be more convenient. 
