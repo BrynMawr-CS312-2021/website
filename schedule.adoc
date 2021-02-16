@@ -14,6 +14,7 @@
 * Lab: Github and C++ workshop 
 * (Optional) link:https://www.udemy.com/course/free-learn-c-tutorial-beginners/[C++ Course]
 * (Optional/Fun) link:https://www.youtube.com/watch?v=TPrnSACiTJ4[Blender Beginner Tutorial]
+* link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=9051732b-5b34-420e-bc26-acd1001a0a2e[Lecture 2/15/2021]
 
 //-----------------------------
 |2
