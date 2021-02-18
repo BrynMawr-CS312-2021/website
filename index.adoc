@@ -9,8 +9,6 @@ include::header.adoc[]
 
 = {course}: {title} -- {term}
 
-image::jadeDragonWithSand.jpg[width=600px,align="center"]
-
 [.anns]
 == Announcements
 [unstyled]
@@ -26,6 +24,8 @@ on lecture content, worksheets, and assignments.
 include::schedule.adoc[]
 
 == Course Info
+
+image::jadeDragonWithSand.jpg[width=600px,align="center"]
 
 **Welcome to CS312**. An introduction to computer graphics. Computer graphics
 is a fundamental technology underlying many applications such as digital

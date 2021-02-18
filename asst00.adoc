@@ -49,12 +49,12 @@ introduction channel, say and introduce yourself:
 
 = Read the class web pages 
 
-Start by reading through **all** of the link:../index.html[class webpage]!
+Start by reading through **all** of the link:./index.html[class webpage]!
 Bookmark this page on your browser, or use some other method that helps you 
 keep this information handy. All course materials and announcements will be 
 posted on the course webpage! 
 
-Pay special attention to the link:../index.html#_schedule[Schedule]. 
+Pay special attention to the link:./index.html#_schedule[Schedule]. 
 
 = Setup graphics
 
