@@ -9,9 +9,9 @@
 //-----------------------------
 |1
 |Feb 15,18
-|*3D Graphics Fundamentals, C++* anchor:intro[]
+|*3D Graphics Fundamentals, C++/CMake/Git* anchor:intro[]
 
-* Lab: Github and C++ workshop 
+* Lab: link:https://github.com/BrynMawr-CS312-2021/git-workshop[Github workshop] 
 * (Optional) link:https://www.udemy.com/course/free-learn-c-tutorial-beginners/[C++ Course]
 * (Optional/Fun) link:https://www.youtube.com/watch?v=TPrnSACiTJ4[Blender Beginner Tutorial]
 * link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=9051732b-5b34-420e-bc26-acd1001a0a2e[Lecture 2/15/2021]
