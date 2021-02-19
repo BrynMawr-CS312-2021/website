@@ -11,15 +11,16 @@
 |Feb 15,18
 |*3D Graphics Fundamentals, C++/CMake/Git* anchor:intro[]
 
-* Lab: link:https://github.com/BrynMawr-CS312-2021/git-workshop[Github workshop] 
 * (Optional) link:https://www.udemy.com/course/free-learn-c-tutorial-beginners/[C++ Course]
 * (Optional/Fun) link:https://www.youtube.com/watch?v=TPrnSACiTJ4[Blender Beginner Tutorial]
-* link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=9051732b-5b34-420e-bc26-acd1001a0a2e[Lecture 2/15/2021]
+* link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=b543d9ed-7e3b-4e53-b6b1-acd1001a3845[Lecture 2/15/2021]
+,link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=261a66ce-42e8-49f6-b4e4-acd3017dd6f1[Lecture 2/18/2021]
+* Git workshop: link:https://github.com/BrynMawr-CS312-2021/git-workshop[Notes],link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=aa6a31bf-a4f1-419a-a2ed-acd30182820f[Video] 
 
 //-----------------------------
 |2
 |Feb 22,25
-|*Pixmap graphics* anchor:pixmap[]
+|*Pixmap graphics, more C++* anchor:pixmap[]
 
 * Topics: pixels, images, color, compositing, C++ pointers and arrays
 * Read: link:https://raytracing.github.io/books/RayTracingInOneWeekend.html[Ray Tracing in one weekend]: Sec 2
@@ -30,7 +31,7 @@
 //-----------------------------
 |3
 |March 1,4
-|*Raytracing*  anchor:raytrace[]
+|*From 2D to raytracing*  anchor:raytrace[]
 
 * Topics: The ray tracing algorithm, points and vectors, the GLM library, intersection testing
 * Read: link:https://raytracing.github.io/books/RayTracingInOneWeekend.html[Ray Tracing in one weekend]: Sec 4,5
