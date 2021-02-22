@@ -20,12 +20,12 @@
 //-----------------------------
 |2
 |Feb 22,25
-|*Pixmap graphics, more C++* anchor:pixmap[]
+|*Raster graphics, more C++* anchor:pixmap[]
 
 * Topics: pixels, images, color, compositing, C++ pointers and arrays
-* Read: link:https://raytracing.github.io/books/RayTracingInOneWeekend.html[Ray Tracing in one weekend]: Sec 2
 * link:https://www.cplusplus.com/doc/tutorial/arrays/[C++ arrays] 
 * link:asst00.html[Assignment 0] is due February 25 at midnight
+* Read: Marschner and Shirley, Chapter 3, Sections 8.1.1, 8.1.2
 * Lab: Office Hours
 
 //-----------------------------

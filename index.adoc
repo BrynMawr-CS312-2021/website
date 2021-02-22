@@ -12,7 +12,7 @@ include::header.adoc[]
 [.anns]
 == Announcements
 [unstyled]
-* *Welcome to CS312!* First lecture will be on Monday, February 15th.
+* Topics this week: link:#pixmap[C++ and 2D raster Graphics]
 * link:asst00.html[Assignment 0] is due February 25 at midnight
 * link:https://github.com/BrynMawr-CS312-2021/getting-started[Use the instructions here to test your development environment].
 
@@ -66,7 +66,7 @@ and be able to share them with others!
 
 **Texts and references**
 
-* **GLFW**
+* **GLFW** link:
 * **OpenGL**
 * **GLSL** link:
 * **GLM** link:https://glm.g-truc.net/0.9.9/index.html[Project Page]
