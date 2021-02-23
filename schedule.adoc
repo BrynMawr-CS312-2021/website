@@ -22,11 +22,12 @@
 |Feb 22,25
 |*Raster graphics, more C++* anchor:pixmap[]
 
-* Topics: pixels, images, color, compositing, C++ pointers and arrays
+* Topics: pixels, images, color, compositing, C++ classes, structs, pointers and arrays
 * link:https://www.cplusplus.com/doc/tutorial/arrays/[C++ arrays] 
 * link:asst00.html[Assignment 0] is due February 25 at midnight
 * Read: Marschner and Shirley, Chapter 3, Sections 8.1.1, 8.1.2
-* Lab: Office Hours
+* Lab check-ins
+* link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=3ba6d828-70a7-4367-aa12-acd80027d82e[Lecture 2/22/2021]
 
 //-----------------------------
 |3
