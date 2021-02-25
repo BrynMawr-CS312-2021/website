@@ -40,7 +40,7 @@
 * (Optional) Real-time Rendering, Section 22.6 (Ray/Sphere Intersection)
 * (Optional) Real-time Rendering, Section 22.7 (Ray/Box Intersection)
 * (Optional) Real-time Rendering, Section 22.8 (Ray/Triangle Intersection)
-* link:asst01.html[Assignment 1] is due March 4 at midnight
+* link:asst01.html[Assignment 1] is due March 8 at midnight
 * Lab: Office Hours
 
 //-----------------------------
@@ -50,7 +50,7 @@
 
 * Topics: materials, lights, C++ standard template library 
 * Read: link:https://raytracing.github.io/books/RayTracingInOneWeekend.html[Ray Tracing in one weekend]: Sec 6-10 
-* link:asst02.html[Assignment 2] is due March 11 at midnight
+* link:asst02.html[Assignment 2] is due March 15 at midnight
 * Lab: Office Hours
 
 //-----------------------------
@@ -61,7 +61,6 @@
 * Topics: Event loops and callbacks, graphics pipeline, shaders (lights and materials), buffers
 * Read link:https://antongerdelan.net/opengl/hellotriangle.html[Hello Triangle]
 * *Lab: Math jam*: Points, vectors, dot product, intersection testing
-* link:asst03.html[Assignment 3] is due March 18 at midnight
 
 //-----------------------------
 |6
@@ -79,7 +78,7 @@
 |*Spring Pause*
 
 * *No lab/class this week*
-* link:asst04.html[Assignment 4] is due April 1 at midnight
+* link:asst04.html[Assignment 3] is due April 5 at midnight
 
 //-----------------------------
 |8
@@ -88,7 +87,7 @@
 
 * Topics: mesh representations, texturing, procedural techniques, 3D modeling
 * *Lab: Math jam*: Coordinate frames, Transformations, projections
-* link:asst05.html[Assignment 5] is due April 8 at midnight
+* link:asst05.html[Assignment 4] is due April 12 at midnight
 
 //-----------------------------
 |9
@@ -97,7 +96,7 @@
 
 * Billboards, sprites, physically-based simulation, alpha blending and transparency
 * *Lab: Presentations*: Coordinate frames, transformation, projections
-* link:asst06.html[Assignment 6] is due April 15 at midnight
+* link:asst06.html[Assignment 5] is due April 19 at midnight
 
 //-----------------------------
 |10
