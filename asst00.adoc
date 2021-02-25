@@ -69,9 +69,9 @@ on your own computer will be more convenient.
 
 We also recommend you install Blender and Gimp:
 
-* link:blender.org[Blender]: A 3D modeling tool with photorealistic rendering features. Blender can be used to view and create 3D models. We will use this in class demos and you may find it useful (and fun) to 
+* link:https://blender.org[Blender]: A 3D modeling tool with photorealistic rendering features. Blender can be used to view and create 3D models. We will use this in class demos and you may find it useful (and fun) to 
 use yourself. 
-* link:gimp.org[Gimp]: An open source image program, similar to Photoshop. Gimp can be used to view and edit images, including textures.
+* link:https://gimp.org[Gimp]: An open source image program, similar to Photoshop. Gimp can be used to view and edit images, including textures.
 
 = C++ warm-up 
 
