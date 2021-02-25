@@ -64,11 +64,21 @@ and be able to share them with others!
 
 == Texts and software
 
-**Texts and references**
+**Texts**
 
-* **GLFW** link:
-* **OpenGL**
-* **GLSL** link:
+Some lecture material will be based on information from the following textbooks:
+
+Real-Time Rendering, Fourth Edition 4th Edition, 
+by Tomas Akenine-Mo¨ller, Eric Haines, Naty Hoffman
+(available as an e-book at the library)
+
+Fundamentals of Computer Graphics 4th Edition, by Steve Marschner, Peter Shirley 
+
+**References**
+
+* **GLFW** link:https://www.glfw.org/documentation[Documentation]
+* **OpenGL** link:https://www.khronos.org/registry/OpenGL/specs/gl/glspec46.core.pdf[Specification]
+* **GLSL** link:https://www.khronos.org/registry/OpenGL/specs/gl/GLSLangSpec.4.60.pdf[Specification]
 * **GLM** link:https://glm.g-truc.net/0.9.9/index.html[Project Page]
 
 **Software**
