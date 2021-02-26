@@ -27,8 +27,8 @@
 * link:asst00.html[Assignment 0] is due February 25 at midnight
 * Read: Marschner and Shirley, Chapter 3, Sections 8.1.1, 8.1.2
 * Lab check-ins
-* link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=3ba6d828-70a7-4367-aa12-acd80027d82e[Lecture 2/22/2021]
-
+* link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=3ba6d828-70a7-4367-aa12-acd80027d82e[Lecture 2/22/2021],
+link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6d2fc2e9-c177-47ed-9702-acdb00ebc3ca[Lecture 2/25/2021]
 //-----------------------------
 |3
 |March 1,4

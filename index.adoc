@@ -13,7 +13,7 @@ include::header.adoc[]
 == Announcements
 [unstyled]
 * Topics this week: link:#pixmap[C++ and 2D raster Graphics]
-* link:asst00.html[Assignment 0] is due February 25 at midnight
+* link:asst01.html[Assignment 1] is due March 8 at midnight
 * link:https://github.com/BrynMawr-CS312-2021/getting-started[Use the instructions here to test your development environment].
 
 == **Schedule**
