@@ -183,7 +183,7 @@ image.save("earth-blend-0.5.ppm");
 
 image::A01/earth-blend-0.5.png[]
 
-= Define operators of your own
+= Define your own operators
 
 Implement *at least six* additional operations for your ppm_image class. You can make 
 up your own filter, re-implement a filter from Gimp, or research an interesting filter online. 
