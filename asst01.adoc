@@ -212,6 +212,10 @@ In the program, `pixmap_art.cpp`, use multiple effects to create one or more
 unique images. Feel free to use your own images exported from Gimp 
 (or another image application).
 
+*Make sure to use your custom operations from the previous question in your 
+artworks!! You will not get credit for operators which you don't test and show 
+work correctly!*
+
 = Update Readme.md
 
 Update `Readme.md` to include documentation on your unique features and art created with your class.
