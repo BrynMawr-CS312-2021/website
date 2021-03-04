@@ -216,6 +216,12 @@ unique images. Feel free to use your own images exported from Gimp
 artworks!! You will not get credit for operators which you don't test and show 
 work correctly!*
 
+Below are some ideas:
+
+image::A01/kitty-bitmap.png[width=256px]
+image::A01/SoupTile.png[width=256px]
+image::A01/SoupTunnel-Darkest.png[width=128px]
+
 = Update Readme.md
 
 Update `Readme.md` to include documentation on your unique features and art created with your class.
