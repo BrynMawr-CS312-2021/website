@@ -41,7 +41,7 @@ link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6d2fc2e9-c
 * link:asst01.html[Assignment 1] is due March 8 at midnight
 * Lab: Office Hours
 * link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=a4a82bfc-aed4-440e-addf-acdf00091b05[Lecture 3/1/2021],
-
+link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=77bf6fd1-2cc9-4040-8dac-ace101837e15[Lecture 3/4/2021]
 //-----------------------------
 |4
 |March 8,11
