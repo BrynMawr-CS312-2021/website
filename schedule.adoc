@@ -42,38 +42,37 @@ link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6d2fc2e9-c
 * Lab: Office Hours
 * link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=a4a82bfc-aed4-440e-addf-acdf00091b05[Lecture 3/1/2021],
 link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=77bf6fd1-2cc9-4040-8dac-ace101837e15[Lecture 3/4/2021]
+
 //-----------------------------
 |4
 |March 8,11
 |*Raytracing* anchor:raytrace[]
 
+* Topics: Bresenham worksheet, piecewise-linear curves
 * Topics: The ray tracing algorithm, points and vectors, the GLM library, intersection testing
-* Topics: materials, lights, C++ standard template library 
 * Read: link:https://raytracing.github.io/books/RayTracingInOneWeekend.html[Ray Tracing in one weekend]: Sec 6-10 
 * (Optional) Real-time Rendering, Section 22.6 (Ray/Sphere Intersection)
 * (Optional) Real-time Rendering, Section 22.7 (Ray/Box Intersection)
 * (Optional) Real-time Rendering, Section 22.8 (Ray/Triangle Intersection)
 * link:asst02.html[Assignment 2] is due March 18 at midnight
-* Lab: Office Hours
+* link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=3fccddbe-da76-4013-a909-ace501799ad7[Lecture 3/8/2021]
 
 //-----------------------------
 |5
 |March 15,18
-|*Real-time rendering with openGL* anchor:opengl[]
+|*Raytracing* anchor:raytrace[]
 
-* Topics: Event loops and callbacks, graphics pipeline, shaders (lights and materials), buffers
-* Read link:https://antongerdelan.net/opengl/hellotriangle.html[Hello Triangle]
-* *Lab: Math jam*: Points, vectors, dot product, intersection testing
+* Topics: materials, lights, C++ standard template library 
+* Read: link:https://raytracing.github.io/books/RayTracingInOneWeekend.html[Ray Tracing in one weekend]: Sec 6-10 
 
 //-----------------------------
 |6
 |March 22,25
-|*Coordinate frames, transformations, and projections* anchor:coordinates[]
+|*Real-time rendering with openGL* anchor:opengl[]
 
-* Topics: homogeneous coordinates, transformation matrices
-* Read link:https://learnopengl.com/Getting-started/Coordinate-Systems[OpenGL Coordinate Systems] 
-* Read link:http://immersivemath.com/ila/ch06_matrices/ch06.html[Immersice Linear Algebra]: Chapter 6 (Matrices)
-* *Lab presentations*: Points, vectors, dot product, intersection testing
+* Topics: Event loops and callbacks, graphics pipeline, shaders (lights and materials), buffers
+* Read link:https://antongerdelan.net/opengl/hellotriangle.html[Hello Triangle]
+* *Math jam*: Points, vectors, dot product, intersection testing
 
 //-----------------------------
 |7
@@ -86,36 +85,37 @@ link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=77bf6fd1-2
 //-----------------------------
 |8
 |April 5,8
-|*Meshes* anchor:meshes[]
+|*Coordinate frames, transformations, and projections* anchor:coordinates[]
 
-* Topics: mesh representations, texturing, procedural techniques, 3D modeling
+* Topics: homogeneous coordinates, transformation matrices
+* Read link:https://learnopengl.com/Getting-started/Coordinate-Systems[OpenGL Coordinate Systems] 
+* Read link:http://immersivemath.com/ila/ch06_matrices/ch06.html[Immersice Linear Algebra]: Chapter 6 (Matrices)
 * *Lab: Math jam*: Coordinate frames, Transformations, projections
 * link:asst05.html[Assignment 4] is due April 12 at midnight
 
 //-----------------------------
 |9
 |April 12,15
-|*Particle systems* anchor:particlesystem[]
+|*Meshes* anchor:meshes[]
 
-* Billboards, sprites, physically-based simulation, alpha blending and transparency
-* *Lab: Presentations*: Coordinate frames, transformation, projections
+* Topics: mesh representations, texturing, procedural techniques, 3D modeling
 * link:asst06.html[Assignment 5] is due April 19 at midnight
 
 //-----------------------------
 |10
 |April 19,22
-|*Ray marching* anchor:raymarch[]
+|*Particle systems* anchor:particlesystem[]
 
-* Volumetric rendering, constructive solid geometry, shadertoy
+* Billboards, sprites, physically-based simulation, alpha blending and transparency
 * link:asst07.html[Assignment 7] is due April 22 at midnight
 * Lab: Office Hours
 
 //-----------------------------
 |11
 |April 26,29
-|*Advanced Shaders*
+|*Ray marching* anchor:raymarch[]
 
-* Potential topics: noise, non-photorealistic rendering, glow, BRDFs, HDR
+* Volumetric rendering, constructive solid geometry, shadertoy
 * Lab: Office Hours
 * *Project proposals due*
 
@@ -124,6 +124,7 @@ link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=77bf6fd1-2
 |May 3,6
 |*Advanced Shaders*
 
+* Potential topics: noise, non-photorealistic rendering, glow, BRDFs, HDR
 * Potential topics: noise, non-photorealistic rendering, glow, BRDFs
 * Lab: Project introductions
 
