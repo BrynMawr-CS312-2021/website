@@ -60,7 +60,7 @@ link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=77bf6fd1-2
 //-----------------------------
 |5
 |March 15,18
-|*Raytracing* anchor:raytrace[]
+|*Raytracing* anchor:raytrace22[]
 
 * Topics: materials, lights, C++ standard template library 
 * Read: link:https://raytracing.github.io/books/RayTracingInOneWeekend.html[Ray Tracing in one weekend]: Sec 6-10 
