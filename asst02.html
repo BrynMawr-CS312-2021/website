@@ -24,8 +24,15 @@
 <li><a href="#_walkthrough_and_tips">3. Walkthrough and tips</a>
 <ul class="sectlevel2">
 <li><a href="#_line_drawing">3.1. Line drawing</a></li>
+<li><a href="#_interpolated_line_colors">3.2. Interpolated line colors</a></li>
+<li><a href="#_triangles">3.3. Triangles</a></li>
+<li><a href="#_composite_shapes">3.4. Composite shapes</a></li>
 </ul>
 </li>
+<li><a href="#_implement_your_own_features">4. Implement your own features</a></li>
+<li><a href="#_create_a_unique_image">5. Create a unique image</a></li>
+<li><a href="#_update_readme_md">6. Update Readme.md</a></li>
+<li><a href="#_what_to_hand_in">7. What to hand in</a></li>
 </ul>
 </div>
 </div>
@@ -67,7 +74,12 @@
 <div class="sectionbody">
 <div class="paragraph">
 <p>Implement a class <code>canvas</code>, which can draw lines and triangles on a raster image.
-The <code>canvas</code> class implements a state machine based api.
+This class mirrors the APIs found in OpenGL 1.0 and <a href="https://www.processing.org/reference/">Processing</a>
+See the <a href="https://www.processing.org/reference/beginShape_.html">beginShape</a>
+for an example that is similar to what you are building for this assignment.</p>
+</div>
+<div class="paragraph">
+<p>The <code>canvas</code> class implements a state machine based api.
 For example, the following code creates a canvas with size (100,100) and
 draws a red line followed by a green line.</p>
 </div>
@@ -144,49 +156,82 @@ primitive or color.  Or you might want to add functions to draw lines and triang
 <pre class="highlight"><code>drawer.color(255, 255, 255);
 test_line(drawer, 0, 50, 100, 50, "horizontal-line.png");
 test_line(drawer, 50, 0, 50, 100, "vertical-line.png");
-test_line(drawer, 0, 0, 100, 100, "diagonal-line-1.png"); // slope = 1
-test_line(drawer, 25, 10, 75, 25,  "h-lessthan-w-line-1.png"); // slope H &lt; W
-test_line(drawer, 25, 25, 75, 75,  "w-lessthan-h-line-1.png"); // slope W &lt; H
-test_line(drawer, 0, 100, 100, 0, "diagonal-line-2.png"); // slope H &lt; W
-test_line(drawer, 25, 90, 75, 75,  "h-lessthan-w-line-2.png"); // slope H &lt; W
-test_line(drawer, 25, 90, 75, 25,  "w-lessthan-h-line-2.png"); // slope W &lt; H
----
-
-image::A02/horizontal-line.png[]
-image::A02/vertical-line.png[]
-image::A02/diagonal-line-1.png[]
-image::A02/h-lessthan-w-line-1.png[]
-image::A02/w-lessthan-h-line-1.png[]
-image::A02/diagonal-line-2.png[]
-image::A02/h-lessthan-w-line-2.png[]
-image::A02/w-lessthan-h-line-2.png[]
-
-== Interpolated line colors
-
-[source]</code></pre>
+test_line(drawer, 0, 0, 100, 100, "diagonal-line-1.png");
+test_line(drawer, 25, 10, 75, 25,  "h-lessthan-w-line-1.png");
+test_line(drawer, 25, 25, 75, 75,  "w-lessthan-h-line-1.png");
+test_line(drawer, 0, 100, 100, 0, "diagonal-line-2.png");
+test_line(drawer, 25, 90, 75, 75,  "h-lessthan-w-line-2.png");
+test_line(drawer, 25, 90, 75, 25,  "w-lessthan-h-line-2.png");</code></pre>
 </div>
 </div>
-<div class="paragraph">
-<p>drawer.background(0, 0, 0);
+<div class="imageblock">
+<div class="content">
+<img src="img/A02/horizontal-line.png" alt="horizontal line">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/A02/vertical-line.png" alt="vertical line">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/A02/diagonal-line-1.png" alt="diagonal line 1">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/A02/h-lessthan-w-line-1.png" alt="h lessthan w line 1">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/A02/w-lessthan-h-line-1.png" alt="w lessthan h line 1">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/A02/diagonal-line-2.png" alt="diagonal line 2">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/A02/h-lessthan-w-line-2.png" alt="h lessthan w line 2">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/A02/w-lessthan-h-line-2.png" alt="w lessthan h line 2">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_interpolated_line_colors">3.2. Interpolated line colors</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>// test line interpolation
+drawer.background(0, 0, 0);
 drawer.begin(LINES);
 drawer.color(255, 0, 255);
 drawer.vertex(0, 0);
 drawer.color(0, 255, 255);
 drawer.vertex(100, 100);
 drawer.end();
-drawer.save("line-color-interpolation.png");</p>
+drawer.save("line-color-interpolation.png");</code></pre>
 </div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/A02/line-color-interpolation.png" alt="line color interpolation">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_triangles">3.3. Triangles</h3>
 <div class="listingblock">
 <div class="content">
-<pre>image::A02/line-color-interpolation.png[]
-
-== Triangles
-
-[source]</pre>
-</div>
-</div>
-<div class="paragraph">
-<p>drawer.background(0, 0, 0);
+<pre class="highlight"><code>// test triangle with interpolation
+drawer.background(0, 0, 0);
 drawer.begin(TRIANGLES);
 drawer.color(255, 0, 255);
 drawer.vertex(10, 0);
@@ -195,83 +240,135 @@ drawer.vertex(90, 50);
 drawer.color(255, 255, 0);
 drawer.vertex(10, 90);
 drawer.end();
-drawer.save("triangle.png");</p>
+drawer.save("triangle.png");</code></pre>
 </div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/A02/triangle.png" alt="triangle">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_composite_shapes">3.4. Composite shapes</h3>
 <div class="listingblock">
 <div class="content">
-<pre>image::A02/triangle.png[]
-
-== Composite shapes
-
-[source]</pre>
-</div>
-</div>
-<div class="paragraph">
-<p>drawer.background(0, 0, 0);
+<pre class="highlight"><code>// test quad with interpolation
+drawer.background(0, 0, 0);
 drawer.begin(TRIANGLES);
 drawer.color(255, 0, 255);
 drawer.vertex(10, 10);
 drawer.vertex(10, 90);
-drawer.vertex(90, 90);</p>
-</div>
-<div class="paragraph">
-<p>drawer.color(255, 255, 0);
+drawer.vertex(90, 90);
+
+drawer.color(255, 255, 0);
 drawer.vertex(90, 90);
 drawer.vertex(90, 10);
 drawer.vertex(10, 10);
 drawer.end();
-drawer.save("quad.png");</p>
+drawer.save("quad.png");</code></pre>
 </div>
-<div class="listingblock">
+</div>
+<div class="imageblock">
 <div class="content">
-<pre>image::A02/quad.png[]
-
-= Define your shapes
-
-Implement *at least 2* additional canvas operations.
-Below are some ideas:
-
-* Circle: draw a circle with given position and radius
-* Rectangle: draw a rectangle with given center, width, and height
-* Star: draw a star shape
-* Support widths
-* Add a point primitive
-* Support fill and outline colors
-* Flower: Draw primitives using link:https://en.wikipedia.org/wiki/Rose_%28mathematics%29[rose curves]
-
-= Create a unique image
-
-In the program, `draw_art.cpp`, use multiple effects to create one or more
+<img src="img/A02/quad.png" alt="quad">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_implement_your_own_features">4. Implement your own features</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Implement <strong>at least 4</strong> additional canvas features. Feel free to come
+up with your own ideas. Here are suggestions:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Make it easy for the user to draw different shapes</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Circle: draw a circle with given position and radius</p>
+</li>
+<li>
+<p>Rectangle: draw a rectangle with given center, width, and height</p>
+</li>
+<li>
+<p>Star: draw a star shape</p>
+</li>
+<li>
+<p>Flower, or other shapes using <a href="https://en.wikipedia.org/wiki/Rose_%28mathematics%29">rose curves</a></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Let the user set line widths</p>
+</li>
+<li>
+<p>Add a point primitive</p>
+</li>
+<li>
+<p>Support fill and outline colors</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_create_a_unique_image">5. Create a unique image</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>In the program, <code>draw_art.cpp</code>, use multiple effects to create one or more
 unique images. Feel free to be creative and use operations from the previous
 assignment. For example, additive blending can be used to create glowing
-objects.
-
-Ideas for procedural patterns might be based on
-link:https://en.wikipedia.org/wiki/Spirograph[Spirograph], random
-numbers and noise, gradients, or link:https://www.color-hex.com/color-palettes/[color pallets].
-
-*Make sure to use your custom operations from the previous question in your
-artworks!! You will not get credit for operators which you don't test and show
-work correctly!*
-
-= Update Readme.md
-
-Update `Readme.md` to include documentation on your unique features and art created with your class.
-
-= What to hand in
-
-. Your code. Make sure your code is checked into github
-. One or more images created using your software
-. Update `Readme.md` so it includes a writeup of the features your application supports</pre>
+objects.</p>
+</div>
+<div class="paragraph">
+<p>Ideas for procedural patterns might be based on
+<a href="https://en.wikipedia.org/wiki/Spirograph">spirograph</a>, random
+numbers and noise, gradients, or <a href="https://www.color-hex.com/color-palettes/">color pallets</a>.</p>
+</div>
+<div class="paragraph">
+<p><strong>Make sure to use your custom operations from the previous question in your
+artworks!! You will not get credit for operators which you don&#8217;t test and show
+work correctly!</strong></p>
 </div>
 </div>
+</div>
+<div class="sect1">
+<h2 id="_update_readme_md">6. Update Readme.md</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Update <code>Readme.md</code> to include documentation on your unique features and art created with your class.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_what_to_hand_in">7. What to hand in</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Your code. Make sure your code is checked into github</p>
+</li>
+<li>
+<p>One or more images created using your software</p>
+</li>
+<li>
+<p>Update <code>Readme.md</code> so it includes a writeup of the features your application supports</p>
+</li>
+</ol>
 </div>
 </div>
 </div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2021-03-09 21:08:11 -0500
+Last updated 2021-03-09 21:16:32 -0500
 </div>
 </div>
 </body>

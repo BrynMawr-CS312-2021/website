@@ -25,6 +25,10 @@ Following the instructions in `Readme.md` to build and run the code.
 = canvas class 
 
 Implement a class `canvas`, which can draw lines and triangles on a raster image. 
+This class mirrors the APIs found in OpenGL 1.0 and link:https://www.processing.org/reference/[Processing]
+See the link:https://www.processing.org/reference/beginShape_.html[beginShape]  
+for an example that is similar to what you are building for this assignment.
+
 The `canvas` class implements a state machine based api. 
 For example, the following code creates a canvas with size (100,100) and 
 draws a red line followed by a green line.
@@ -76,13 +80,13 @@ Use `draw_test.cpp` to test the core functionality of your `canvas`
 drawer.color(255, 255, 255);
 test_line(drawer, 0, 50, 100, 50, "horizontal-line.png");
 test_line(drawer, 50, 0, 50, 100, "vertical-line.png");
-test_line(drawer, 0, 0, 100, 100, "diagonal-line-1.png"); // slope = 1
-test_line(drawer, 25, 10, 75, 25,  "h-lessthan-w-line-1.png"); // slope H < W
-test_line(drawer, 25, 25, 75, 75,  "w-lessthan-h-line-1.png"); // slope W < H
-test_line(drawer, 0, 100, 100, 0, "diagonal-line-2.png"); // slope H < W
-test_line(drawer, 25, 90, 75, 75,  "h-lessthan-w-line-2.png"); // slope H < W
-test_line(drawer, 25, 90, 75, 25,  "w-lessthan-h-line-2.png"); // slope W < H
----
+test_line(drawer, 0, 0, 100, 100, "diagonal-line-1.png"); 
+test_line(drawer, 25, 10, 75, 25,  "h-lessthan-w-line-1.png"); 
+test_line(drawer, 25, 25, 75, 75,  "w-lessthan-h-line-1.png"); 
+test_line(drawer, 0, 100, 100, 0, "diagonal-line-2.png"); 
+test_line(drawer, 25, 90, 75, 75,  "h-lessthan-w-line-2.png"); 
+test_line(drawer, 25, 90, 75, 25,  "w-lessthan-h-line-2.png"); 
+----
 
 image::A02/horizontal-line.png[]
 image::A02/vertical-line.png[]
@@ -150,18 +154,19 @@ drawer.save("quad.png");
 ----
 image::A02/quad.png[]
 
-= Define your shapes
+= Implement your own features
 
-Implement *at least 2* additional canvas operations. 
-Below are some ideas:
+Implement *at least 4* additional canvas features. Feel free to come 
+up with your own ideas. Here are suggestions: 
 
-* Circle: draw a circle with given position and radius
-* Rectangle: draw a rectangle with given center, width, and height
-* Star: draw a star shape
-* Support widths
+* Make it easy for the user to draw different shapes
+** Circle: draw a circle with given position and radius
+** Rectangle: draw a rectangle with given center, width, and height
+** Star: draw a star shape
+** Flower, or other shapes using link:https://en.wikipedia.org/wiki/Rose_%28mathematics%29[rose curves]
+* Let the user set line widths
 * Add a point primitive  
 * Support fill and outline colors
-* Flower: Draw primitives using link:https://en.wikipedia.org/wiki/Rose_%28mathematics%29[rose curves]
 
 = Create a unique image
 
@@ -171,7 +176,7 @@ assignment. For example, additive blending can be used to create glowing
 objects. 
 
 Ideas for procedural patterns might be based on 
-link:https://en.wikipedia.org/wiki/Spirograph[Spirograph], random 
+link:https://en.wikipedia.org/wiki/Spirograph[spirograph], random 
 numbers and noise, gradients, or link:https://www.color-hex.com/color-palettes/[color pallets]. 
 
 *Make sure to use your custom operations from the previous question in your 
