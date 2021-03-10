@@ -13,8 +13,7 @@ include::header.adoc[]
 == Announcements
 [unstyled]
 * New topic this week: link:#raytrace[Raytracing]
-* link:asst01.html[Assignment 1] is due March 8 at midnight
-* link:https://github.com/BrynMawr-CS312-2021/getting-started[Use the instructions here to test your development environment].
+* link:asst02.html[Assignment 2] is due March 18 at midnight
 
 == **Schedule**
 
