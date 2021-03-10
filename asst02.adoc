@@ -166,7 +166,10 @@ up with your own ideas. Here are suggestions:
 ** Flower, or other shapes using link:https://en.wikipedia.org/wiki/Rose_%28mathematics%29[rose curves]
 * Let the user set line widths
 * Add a point primitive  
-* Support fill and outline colors
+* Support both filled shapes and outlined shapes
+* Support different blend modes, such as add, difference, and multiply
+* make it easy for users to specify gradients
+* Support alpha blending
 
 = Create a unique image
 
@@ -175,13 +178,51 @@ unique images. Feel free to be creative and use operations from the previous
 assignment. For example, additive blending can be used to create glowing 
 objects. 
 
+*Make sure to use your custom operations from the previous question in your 
+artworks!! You will not get credit for operators which you don't test and show 
+work correctly!*
+
 Ideas for procedural patterns might be based on 
 link:https://en.wikipedia.org/wiki/Spirograph[spirograph], random 
 numbers and noise, gradients, or link:https://www.color-hex.com/color-palettes/[color pallets]. 
 
-*Make sure to use your custom operations from the previous question in your 
-artworks!! You will not get credit for operators which you don't test and show 
-work correctly!*
+Below we create random circles and use the y position to determine its color using 
+a gradient from yellow to cyan. This image also implements both a circle and 
+circle outline.
+
+image::A02/RandomCircles.png[]
+
+The image below creates random stars and colors the background with a 
+gradient using triangles.
+
+image::A02/Sky.png[]
+
+We can also use curves and flow fields to generate patterns. 
+The following image draws line between two points which trace out 
+a rose curve. We use additive blending with the current pixel color 
+to do the coloring. 
+
+image::A02/Rose7.png[]
+
+We add noise to the points to get other, more organic, shapes.
+For this type of effect, a semi-random number which varies smoother often 
+gives better results. Below I use
+
+[source]
+----
+float noise(float t)
+{
+   float v = sin(t) * 1175.5453123;
+   return v - int(v);
+}
+----
+
+image::A02/Rose8.png[]
+
+The examples below use "difference" blending with white.
+
+image::A02/Rose5.png[]
+image::A02/Rose6.png[]
 
 = Update Readme.md
 

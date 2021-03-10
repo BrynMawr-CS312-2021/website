@@ -312,7 +312,16 @@ up with your own ideas. Here are suggestions:</p>
 <p>Add a point primitive</p>
 </li>
 <li>
-<p>Support fill and outline colors</p>
+<p>Support both filled shapes and outlined shapes</p>
+</li>
+<li>
+<p>Support different blend modes, such as add, difference, and multiply</p>
+</li>
+<li>
+<p>make it easy for users to specify gradients</p>
+</li>
+<li>
+<p>Support alpha blending</p>
 </li>
 </ul>
 </div>
@@ -328,14 +337,76 @@ assignment. For example, additive blending can be used to create glowing
 objects.</p>
 </div>
 <div class="paragraph">
+<p><strong>Make sure to use your custom operations from the previous question in your
+artworks!! You will not get credit for operators which you don&#8217;t test and show
+work correctly!</strong></p>
+</div>
+<div class="paragraph">
 <p>Ideas for procedural patterns might be based on
 <a href="https://en.wikipedia.org/wiki/Spirograph">spirograph</a>, random
 numbers and noise, gradients, or <a href="https://www.color-hex.com/color-palettes/">color pallets</a>.</p>
 </div>
 <div class="paragraph">
-<p><strong>Make sure to use your custom operations from the previous question in your
-artworks!! You will not get credit for operators which you don&#8217;t test and show
-work correctly!</strong></p>
+<p>Below we create random circles and use the y position to determine its color using
+a gradient from yellow to cyan. This image also implements both a circle and
+circle outline.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/A02/RandomCircles.png" alt="RandomCircles">
+</div>
+</div>
+<div class="paragraph">
+<p>The image below creates random stars and colors the background with a
+gradient using triangles.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/A02/Sky.png" alt="Sky">
+</div>
+</div>
+<div class="paragraph">
+<p>We can also use curves and flow fields to generate patterns.
+The following image draws line between two points which trace out
+a rose curve. We use additive blending with the current pixel color
+to do the coloring.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/A02/Rose7.png" alt="Rose7">
+</div>
+</div>
+<div class="paragraph">
+<p>We add noise to the points to get other, more organic, shapes.
+For this type of effect, a semi-random number which varies smoother often
+gives better results. Below I use</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>float noise(float t)
+{
+   float v = sin(t) * 1175.5453123;
+   return v - int(v);
+}</code></pre>
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/A02/Rose8.png" alt="Rose8">
+</div>
+</div>
+<div class="paragraph">
+<p>The examples below use "difference" blending with white.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/A02/Rose5.png" alt="Rose5">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/A02/Rose6.png" alt="Rose6">
+</div>
 </div>
 </div>
 </div>
@@ -368,7 +439,7 @@ work correctly!</strong></p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2021-03-09 21:16:32 -0500
+Last updated 2021-03-10 15:51:56 -0500
 </div>
 </div>
 </body>
