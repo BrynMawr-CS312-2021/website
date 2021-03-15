@@ -55,7 +55,8 @@ link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=77bf6fd1-2
 * (Optional) Real-time Rendering, Section 22.7 (Ray/Box Intersection)
 * (Optional) Real-time Rendering, Section 22.8 (Ray/Triangle Intersection)
 * link:asst02.html[Assignment 2] is due March 18 at midnight
-* link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=3fccddbe-da76-4013-a909-ace501799ad7[Lecture 3/8/2021]
+* link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=3fccddbe-da76-4013-a909-ace501799ad7[Lecture 3/8/2021],
+link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=35e9145c-cdc2-437f-ab4d-acec00fbc721[Lecture 3/18/2021]
 
 //-----------------------------
 |5
