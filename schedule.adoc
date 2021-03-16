@@ -51,9 +51,6 @@ link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=77bf6fd1-2
 * Topics: Bresenham worksheet, piecewise-linear curves
 * Topics: The ray tracing algorithm, points and vectors, the GLM library, intersection testing
 * Read: link:https://raytracing.github.io/books/RayTracingInOneWeekend.html[Ray Tracing in one weekend]: Sec 6-10 
-* (Optional) Real-time Rendering, Section 22.6 (Ray/Sphere Intersection)
-* (Optional) Real-time Rendering, Section 22.7 (Ray/Box Intersection)
-* (Optional) Real-time Rendering, Section 22.8 (Ray/Triangle Intersection)
 * link:asst02.html[Assignment 2] is due March 18 at midnight
 * link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=3fccddbe-da76-4013-a909-ace501799ad7[Lecture 3/8/2021],
 link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=35e9145c-cdc2-437f-ab4d-acec00fbc721[Lecture 3/18/2021]
@@ -61,10 +58,15 @@ link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=35e9145c-c
 //-----------------------------
 |5
 |March 15,18
-|*Raytracing* anchor:raytrace22[]
+|*Raytracing* anchor:raytrace2[]
 
-* Topics: materials, lights, C++ standard template library 
+* Topics: materials, shading, lights
 * Read: link:https://raytracing.github.io/books/RayTracingInOneWeekend.html[Ray Tracing in one weekend]: Sec 6-10 
+* (Optional) Real-time Rendering, Section 22.6 (Ray/Sphere Intersection)
+* (Optional) Real-time Rendering, Section 22.7 (Ray/Box Intersection)
+* (Optional) Real-time Rendering, Section 22.8 (Ray/Triangle Intersection)
+* link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=a235b476-3a5e-4fe1-a29a-aced000fcf6f[Lecture 3/15/2021],
+
 
 //-----------------------------
 |6
