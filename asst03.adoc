@@ -1,0 +1,137 @@
+include::header.adoc[]
+
+:title: Assignment 3: It's a material world
+:Author Initials: ASN
+:Date:    2020-02-07
+:Revision: 0.1
+
+= {title}
+
+**Due Thursday, April 5, before midnight**
+
+The goals for this assignment are:
+
+* Implement a raytracer containing a unique set of features
+* Implement materials, such as lambert, phong, metals, glass
+* Implement different primitive types, such as spheres, planes, triangles, and boxes
+* Implement one or more unique scenes
+
+:sectnums:
+
+= Getting started
+
+Fork the repository at https://github.com/BrynMawr-CS312-2021/raytracer
+
+Follow the instructions in `Readme.md` to build and run the code.
+
+If you have already forked this repository, update your 
+repository with the original repository.
+
+[source,subs=quotes]
+----
+git remote add source https://github.com/BrynMawr-CS312-2021/raytracer.git
+git fetch source
+git merge source/main
+----
+
+You may already have a script, `update.sh`, which performs the above steps.
+
+= Basic raytracer
+
+Our raytracer basecode is based on the architecture in 
+link:https://raytracing.github.io/books/RayTracingInOneWeekend.html[Ray tracing in one weekend].
+Read this book to understand the classes and utilities included with your basecode.
+
+Your basecode uses the link:https://github.com/g-truc/glm/blob/master/manual.md[GLM math library] 
+for vectors, points, and colors (which all have type glm::vec3)
+
+Your base code also uses the ppm_image class to save your output to a PNG file.
+
+To run your basic raytracer from bash (mac)
+
+[source,sub=quotes]
+----
+raytracer> ../bin/raytracer
+----
+
+To run your basic raytracer from bash (windows)
+
+[source,sub=quotes]
+----
+raytracer> ../bin/Debug/raytracer
+----
+
+**Requirements**
+
+Your raytracer should implement the following features
+
+* Gradient-based atmospheric background
+* Antialiasing
+* Lambert shading model
+* Spheres
+
+The above features are all explained in the reading.
+
+= Intersections
+
+Implement at least three primitives in your ray tracer. 
+
+**Requirements**
+
+* Implement the geometry intersection tests for sphere (as opposed to the analytic solution you are given)
+* Implement at least two more primitives. Your primitive should be implemented as a subclass of `hittable`. Below are some ideas
+** triangle (see lecture notes)
+** box (see lecture notes)
+** plane (see lecture notes)
+** a primitive of your choice. If you use an online source, be sure to credit it.
+
+**Testing**
+
+Your basecode includes unit tests to help you implement your intersection tests. 
+To run unit tests, do the following
+
+[source,sub=quotes]
+----
+raytracer> ../bin/intersetion_test
+----
+
+To run your basic raytracer from bash (windows)
+
+[source,sub=quotes]
+----
+raytracer> ../bin/Debug/intersection_test
+----
+
+
+= Materials
+
+Implement different materials in your shader
+
+**Requirements**
+
+* Phong shading model
+* Metal (from the reading)
+* Glass (from the reading)
+
+= Create a unique image
+
+Create a unique and interesting scene using your primitives. Note that you can 
+procedurally create pattern and geometry in your scene using curves and formulas 
+(same as assignment 2).
+
+Below are some Ideas
+
+* Change the background colors
+* Combine your finished scene with image-based effects, such as glow
+* Arrange spheres in a snowflake, DNA helix, or fractal pattern
+* Arrange triangles to make plutonic solids or other interesting surfaces 
+
+= Update Readme.md
+
+Update `Readme.md` to include documentation on your unique features and art created with your class.
+
+= What to hand in
+
+. Your code. Make sure your code is checked into github
+. One or more images created using your software
+. Update `Readme.md` so it includes a writeup of the features your application supports. Make sure to include images. Be sure to point out any original features that you implement.
