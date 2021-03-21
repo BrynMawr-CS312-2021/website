@@ -12,8 +12,8 @@ include::header.adoc[]
 [.anns]
 == Announcements
 [unstyled]
-* New topic this week: link:#raytrace[Raytracing]
-* link:asst02.html[Assignment 2] is due March 18 at midnight
+* Topic this week: link:#raytrace3[Materials and transformations]
+* link:asst03.html[Assignment 3] is due April 5 at midnight
 
 == **Schedule**
 
