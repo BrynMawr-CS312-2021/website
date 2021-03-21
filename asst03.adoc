@@ -150,6 +150,8 @@ To run your tests from bash (windows)
 raytracer> ../bin/Debug/materials
 ----
 
+image::A03/materials.png[]
+
 = Create a unique image
 
 Create a unique and interesting scene. Note that you can 
@@ -176,10 +178,9 @@ Below are some ideas (choose *at least* 4).
 ** Post-processing effects (you can use your PPM class for this!)
 
 NOTE: Feel free to also improve the raytracer application so it shows you the
-image as it is computed (and allows you to stop a render). 
-If you implement this feature, be sure to point it out 
-in the readme! Note that you can display gifs in the readme to show off your 
-renderer's behavior!
+image as it is computed (and allows you to stop a render). If you implement
+this feature, be sure to point it out in the readme! Note that you can
+display gifs in the readme to show off your renderer's behavior!
 
 *Important: don't forget to highlight the features you implement in your readme!*
 
