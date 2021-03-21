@@ -24,9 +24,10 @@
 </li>
 <li><a href="#_intersections">3. Intersections</a></li>
 <li><a href="#_materials">4. Materials</a></li>
-<li><a href="#_create_a_unique_image">5. Create a unique image</a></li>
-<li><a href="#_update_readme_md">6. Update Readme.md</a></li>
-<li><a href="#_what_to_hand_in">7. What to hand in</a></li>
+<li><a href="#_implement_a_unique_feature">5. Implement a unique feature</a></li>
+<li><a href="#_create_a_unique_image">6. Create a unique image</a></li>
+<li><a href="#_update_readme_md">7. Update Readme.md</a></li>
+<li><a href="#_what_to_hand_in">8. What to hand in</a></li>
 </ul>
 </div>
 </div>
@@ -163,7 +164,7 @@ This architecture defines classes for</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="img/A03/basic.png" alt="basic">
+<img src="img/A03/basic-empty.png" alt="basic empty">
 </div>
 </div>
 <div class="paragraph">
@@ -178,9 +179,6 @@ This architecture defines classes for</p>
 <p>Antialiasing  (section 7)</p>
 </li>
 <li>
-<p>Lambert materials - probabilistic method (section 8)</p>
-</li>
-<li>
 <p>Gamma correction (section 8.22)</p>
 </li>
 </ul>
@@ -188,6 +186,15 @@ This architecture defines classes for</p>
 <div class="paragraph">
 <p>You can improve the quality of the final image by modifying the parameters
 <code>samplers_per_pixel</code> and <code>max_depth</code> used by the raytracing algorithm.</p>
+</div>
+<div class="paragraph">
+<p>After you implement the lambertian material (probabilistic method from section 8), you
+should see the followng</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/A03/basic.png" alt="basic">
+</div>
 </div>
 </div>
 </div>
@@ -222,7 +229,7 @@ your intersection tests.</p>
 </div>
 </div>
 <div class="paragraph">
-<p>Implement one additional primitive, such as,</p>
+<p>Implement <strong>at least two</strong> additional primitives from the following list</p>
 </div>
 <div class="ulist">
 <ul>
@@ -307,50 +314,21 @@ your intersection tests.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_create_a_unique_image">5. Create a unique image</h2>
+<h2 id="_implement_a_unique_feature">5. Implement a unique feature</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Create a unique and interesting scene. Note that you can
-procedurally create pattern and geometry in your scene using curves and formulas
-(same as assignment 2).</p>
-</div>
-<div class="paragraph">
-<p>Below are some ideas (choose <strong>at least</strong> 4).</p>
+<p>Implement <strong>at least one</strong> unique feature for your ray tracer. You may implement a
+feature from the ray tracing books, or come up with your own. Below are some
+ideas:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>Change the background colors</p>
+<p>Support changing the camera position using look at and up vectors</p>
 </li>
 <li>
-<p>Change the camera position</p>
+<p>Add another primitive</p>
 </li>
-<li>
-<p>Arrange spheres in a snowflake, DNA helix, or fractal pattern</p>
-</li>
-<li>
-<p>Arrange triangles to make plutonic solids or other interesting surfaces</p>
-<div class="ulist">
-<ul>
-<li>
-<p>triangle</p>
-</li>
-<li>
-<p>box</p>
-</li>
-<li>
-<p>plane</p>
-</li>
-<li>
-<p>a primitive of your choice. If you use an online source, be sure to credit it. Add a file to contain your new primitive as well as unit tests.</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>Implement a feature of your choice. If you use online sources as a reference, be sure to give credit.</p>
-<div class="ulist">
-<ul>
 <li>
 <p>Lights</p>
 </li>
@@ -374,6 +352,35 @@ procedurally create pattern and geometry in your scene using curves and formulas
 </li>
 </ul>
 </div>
+<div class="paragraph">
+<p><strong>Be sure to highlight your unique feature in your readme!</strong></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_create_a_unique_image">6. Create a unique image</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Create a unique and interesting scene. Note that you can
+procedurally create pattern and geometry in your scene using curves and formulas
+(same as assignment 2).</p>
+</div>
+<div class="paragraph">
+<p>Below are some ideas (choose <strong>at least</strong> 4).</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Change the background colors</p>
+</li>
+<li>
+<p>Arrange spheres in a snowflake, DNA helix, or fractal pattern</p>
+</li>
+<li>
+<p>Arrange triangles to make plutonic solids or other interesting surfaces</p>
+</li>
+<li>
+<p>Use all your primitives</p>
 </li>
 </ul>
 </div>
@@ -398,7 +405,7 @@ display gifs in the readme to show off your renderer&#8217;s behavior!
 </div>
 </div>
 <div class="sect1">
-<h2 id="_update_readme_md">6. Update Readme.md</h2>
+<h2 id="_update_readme_md">7. Update Readme.md</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Update <code>Readme.md</code> to include documentation on your unique features and images created with your raytracer.</p>
@@ -406,7 +413,7 @@ display gifs in the readme to show off your renderer&#8217;s behavior!
 </div>
 </div>
 <div class="sect1">
-<h2 id="_what_to_hand_in">7. What to hand in</h2>
+<h2 id="_what_to_hand_in">8. What to hand in</h2>
 <div class="sectionbody">
 <div class="olist arabic">
 <ol class="arabic">
@@ -426,7 +433,7 @@ display gifs in the readme to show off your renderer&#8217;s behavior!
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2021-03-21 13:31:41 -0400
+Last updated 2021-03-21 13:55:10 -0400
 </div>
 </div>
 </body>

@@ -79,17 +79,21 @@ This architecture defines classes for
 
 When you run this program, you should see:
 
-image::A03/basic.png[]
+image::A03/basic-empty.png[]
 
 Notice that the basecode implements the following features
 
 * Spheres (section 5, 6.13)
 * Antialiasing  (section 7)
-* Lambert materials - probabilistic method (section 8)
 * Gamma correction (section 8.22)
 
 You can improve the quality of the final image by modifying the parameters
 `samplers_per_pixel` and `max_depth` used by the raytracing algorithm.
+
+After you implement the lambertian material (probabilistic method from section 8), you 
+should see the followng
+
+image::A03/basic.png[]
 
 = Intersections
 
@@ -113,7 +117,7 @@ To run your tests from bash (windows)
 raytracer> ../bin/Debug/intesection_tests
 ----
 
-Implement one additional primitive, such as, 
+Implement *at least two* additional primitives from the following list
 
 * Planes
 * Triangles
@@ -152,6 +156,24 @@ raytracer> ../bin/Debug/materials
 
 image::A03/materials.png[]
 
+= Implement a unique feature
+
+Implement *at least one* unique feature for your ray tracer. You may implement a 
+feature from the ray tracing books, or come up with your own. Below are some 
+ideas:
+
+* Support changing the camera position using look at and up vectors
+* Add another primitive 
+* Lights
+* Volumetric effects
+* Acceleration data structures
+* Focal blur
+* Other materials
+* Textures
+* Post-processing effects (you can use your PPM class for this!)
+
+*Be sure to highlight your unique feature in your readme!*
+
 = Create a unique image
 
 Create a unique and interesting scene. Note that you can 
@@ -161,21 +183,9 @@ procedurally create pattern and geometry in your scene using curves and formulas
 Below are some ideas (choose *at least* 4).
 
 * Change the background colors
-* Change the camera position
 * Arrange spheres in a snowflake, DNA helix, or fractal pattern
 * Arrange triangles to make plutonic solids or other interesting surfaces 
-** triangle
-** box
-** plane
-** a primitive of your choice. If you use an online source, be sure to credit it. Add a file to contain your new primitive as well as unit tests.
-* Implement a feature of your choice. If you use online sources as a reference, be sure to give credit.
-** Lights
-** Volumetric effects
-** Acceleration data structures
-** Focal blur
-** Other materials
-** Textures
-** Post-processing effects (you can use your PPM class for this!)
+* Use all your primitives
 
 NOTE: Feel free to also improve the raytracer application so it shows you the
 image as it is computed (and allows you to stop a render). If you implement
