@@ -48,8 +48,8 @@ link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=77bf6fd1-2
 |March 8,11
 |*Raytracing* anchor:raytrace[]
 
-* Topics: Bresenham worksheet, piecewise-linear curves
-* Topics: The ray tracing algorithm, points and vectors, the GLM library, intersection testing
+* Topics: Bresenham worksheet, piecewise-linear curves, sin, cos, interpolation
+* Topics: The ray tracing algorithm, points and vectors 
 * Read: link:https://raytracing.github.io/books/RayTracingInOneWeekend.html[Ray Tracing in one weekend]: Sec 6-10 
 * link:asst02.html[Assignment 2] is due March 18 at midnight
 * link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=3fccddbe-da76-4013-a909-ace501799ad7[Lecture 3/8/2021],
@@ -60,22 +60,24 @@ link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=35e9145c-c
 |March 15,18
 |*Raytracing* anchor:raytrace2[]
 
-* Topics: materials, shading, lights
+* Topics: Cross product, dot product, intersection testing, Normals, Shading/Materials (Lambert)
 * Read: link:https://raytracing.github.io/books/RayTracingInOneWeekend.html[Ray Tracing in one weekend]: Sec 6-10 
 * (Optional) Real-time Rendering, Section 22.6 (Ray/Sphere Intersection)
 * (Optional) Real-time Rendering, Section 22.7 (Ray/Box Intersection)
 * (Optional) Real-time Rendering, Section 22.8 (Ray/Triangle Intersection)
 * link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=a235b476-3a5e-4fe1-a29a-aced000fcf6f[Lecture 3/15/2021],
-
+, link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=de6f9b6a-2dcc-4d2f-b687-acf1013b4197[Lecture 3/18/2021]
 
 //-----------------------------
 |6
 |March 22,25
-|*Real-time rendering with openGL* anchor:opengl[]
+|*Raytracing* anchor:raytrace3[]
 
-* Topics: Event loops and callbacks, graphics pipeline, shaders (lights and materials), buffers
-* Read link:https://antongerdelan.net/opengl/hellotriangle.html[Hello Triangle]
+* Topics: Shading/Materials (Lambert, Phong, Metal, Glass), Homogeneous coordinates, coordinate frames
+* Read: link:https://raytracing.github.io/books/RayTracingInOneWeekend.html[Ray Tracing in one weekend]: Sec 6-10 
+* Read link:http://immersivemath.com/ila/ch06_matrices/ch06.html[Immersice Linear Algebra]: Chapter 6 (Matrices)
 * *Math jam*: Points, vectors, dot product, intersection testing
+* link:asst03.html[Assignment 3] is due April 5 at midnight
 
 //-----------------------------
 |7
@@ -83,26 +85,25 @@ link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=35e9145c-c
 |*Spring Pause*
 
 * *No lab/class this week*
-* link:asst04.html[Assignment 3] is due April 5 at midnight
 
 //-----------------------------
 |8
 |April 5,8
-|*Coordinate frames, transformations, and projections* anchor:coordinates[]
+|*Real-time rendering with openGL* anchor:opengl[]
 
-* Topics: homogeneous coordinates, transformation matrices
+* Topics: Event loops and callbacks, graphics pipeline, buffers, transformation matrices, projections
+* Read link:https://antongerdelan.net/opengl/hellotriangle.html[Hello Triangle]
 * Read link:https://learnopengl.com/Getting-started/Coordinate-Systems[OpenGL Coordinate Systems] 
-* Read link:http://immersivemath.com/ila/ch06_matrices/ch06.html[Immersice Linear Algebra]: Chapter 6 (Matrices)
-* *Lab: Math jam*: Coordinate frames, Transformations, projections
-* link:asst05.html[Assignment 4] is due April 12 at midnight
+* link:asst04.html[Assignment 4] is due April 12 at midnight
 
 //-----------------------------
 |9
 |April 12,15
 |*Meshes* anchor:meshes[]
 
-* Topics: mesh representations, texturing, procedural techniques, 3D modeling
-* link:asst06.html[Assignment 5] is due April 19 at midnight
+* Topics: mesh representations, texturing
+* link:asst05.html[Assignment 5] is due April 19 at midnight
+* *Lab: Math jam*: Coordinate frames, Transformations, projections
 
 //-----------------------------
 |10
@@ -110,7 +111,7 @@ link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=35e9145c-c
 |*Particle systems* anchor:particlesystem[]
 
 * Billboards, sprites, physically-based simulation, alpha blending and transparency
-* link:asst07.html[Assignment 7] is due April 22 at midnight
+* link:asst06.html[Assignment 6] is due April 22 at midnight
 * Lab: Office Hours
 
 //-----------------------------

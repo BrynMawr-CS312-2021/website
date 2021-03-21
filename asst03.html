@@ -16,7 +16,12 @@
 <ul class="sectlevel1">
 <li><a href="#_assignment_3_its_a_material_world">Assignment 3: It&#8217;s a material world</a></li>
 <li><a href="#_getting_started">1. Getting started</a></li>
-<li><a href="#_basic_raytracer">2. Basic raytracer</a></li>
+<li><a href="#_getting_started_2">2. Getting started</a>
+<ul class="sectlevel2">
+<li><a href="#_lecture_demos">2.1. Lecture demos</a></li>
+<li><a href="#_basic_raytracer">2.2. Basic raytracer</a></li>
+</ul>
+</li>
 <li><a href="#_intersections">3. Intersections</a></li>
 <li><a href="#_materials">4. Materials</a></li>
 <li><a href="#_create_a_unique_image">5. Create a unique image</a></li>
@@ -79,7 +84,7 @@ git merge source/main</code></pre>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_basic_raytracer">2. Basic raytracer</h2>
+<h2 id="_getting_started_2">2. Getting started</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Our raytracer basecode is based on the architecture in
@@ -88,54 +93,102 @@ Read this book to understand the classes and utilities included with your baseco
 </div>
 <div class="paragraph">
 <p>Your basecode uses the <a href="https://github.com/g-truc/glm/blob/master/manual.md">GLM math library</a>
-for vectors, points, and colors (which all have type glm::vec3)</p>
+for vectors, points, and colors (all have type glm::vec3)</p>
 </div>
 <div class="paragraph">
 <p>Your base code also uses the ppm_image class to save your output to a PNG file.</p>
 </div>
+<div class="sect2">
+<h3 id="_lecture_demos">2.1. Lecture demos</h3>
 <div class="paragraph">
-<p>To run your basic raytracer from bash (mac)</p>
+<p>Make sure that you can build and run the examples from lecture.</p>
 </div>
-<div class="listingblock">
+<div class="paragraph">
+<p><strong>gradient</strong></p>
+</div>
+<div class="imageblock">
 <div class="content">
-<pre class="highlight"><code>raytracer&gt; ../bin/raytracer</code></pre>
+<img src="img/A03/gradient.png" alt="gradient">
 </div>
 </div>
 <div class="paragraph">
-<p>To run your basic raytracer from bash (windows)</p>
+<p><strong>silhouette</strong></p>
 </div>
-<div class="listingblock">
+<div class="imageblock">
 <div class="content">
-<pre class="highlight"><code>raytracer&gt; ../bin/Debug/raytracer</code></pre>
+<img src="img/A03/silhouette.png" alt="silhouette">
 </div>
 </div>
 <div class="paragraph">
-<p><strong>Requirements</strong></p>
+<p><strong>normals</strong></p>
 </div>
+<div class="imageblock">
+<div class="content">
+<img src="img/A03/normals.png" alt="normals">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_basic_raytracer">2.2. Basic raytracer</h3>
 <div class="paragraph">
-<p>Your raytracer should implement the following features</p>
+<p>Look at file, <code>basic.cpp</code>. This program implements a simple raytracer that
+supports lambertian materials using the architecture
+from <a href="https://raytracing.github.io/books/RayTracingInOneWeekend.html">Ray tracing in one weekend</a>.
+This architecture defines classes for</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>Gradient-based atmospheric background</p>
+<p>ray</p>
 </li>
 <li>
-<p>Antialiasing</p>
+<p>camera</p>
 </li>
 <li>
-<p>Lambert shading model</p>
+<p>hittable</p>
 </li>
 <li>
-<p>Spheres</p>
+<p>hittable_list</p>
+</li>
+<li>
+<p>material</p>
+</li>
+<li>
+<p>sphere</p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
-<p>The above features are all explained in the reading.</p>
+<p>When you run this program, you should see:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/A03/basic.png" alt="basic">
+</div>
 </div>
 <div class="paragraph">
-<p>TODO: image example</p>
+<p>Notice that the basecode implements the following features</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Spheres (section 5, 6.13)</p>
+</li>
+<li>
+<p>Antialiasing  (section 7)</p>
+</li>
+<li>
+<p>Lambert materials - probabilistic method (section 8)</p>
+</li>
+<li>
+<p>Gamma correction (section 8.22)</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>You can improve the quality of the final image by modifying the parameters
+<code>samplers_per_pixel</code> and <code>max_depth</code> used by the raytracing algorithm.</p>
+</div>
 </div>
 </div>
 </div>
@@ -143,56 +196,46 @@ for vectors, points, and colors (which all have type glm::vec3)</p>
 <h2 id="_intersections">3. Intersections</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Implement at least three primitives in your ray tracer.</p>
+<p>Your basecode already implements sphere intersections in <code>sphere.h</code>. Modify the
+function <code>sphere::hit</code> to use the geometric intersection test from lecture.
+Note that this architecture uses a <code>hit_record</code>, passed by non-const reference,
+to store the hit information, rather than just return time t.</p>
 </div>
 <div class="paragraph">
-<p><strong>Requirements</strong></p>
+<p>In the file, <code>intesection_tests.cpp</code>, we have included tests to help you debug
+your intersection tests.</p>
+</div>
+<div class="paragraph">
+<p>To run your tests from bash (mac)</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>raytracer/build&gt; ../bin/intesection_tests</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>To run your tests from bash (windows)</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>raytracer&gt; ../bin/Debug/intesection_tests</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Implement one additional primitive, such as,</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>Implement the geometry intersection tests for sphere (as opposed to the analytic solution you are given)</p>
+<p>Planes</p>
 </li>
 <li>
-<p>Implement at least two more primitives. Your primitive should be implemented as a subclass of <code>hittable</code>. Below are some ideas</p>
-<div class="ulist">
-<ul>
-<li>
-<p>triangle (see lecture notes)</p>
+<p>Triangles</p>
 </li>
 <li>
-<p>box (see lecture notes)</p>
-</li>
-<li>
-<p>plane (see lecture notes)</p>
-</li>
-<li>
-<p>a primitive of your choice. If you use an online source, be sure to credit it.</p>
+<p>Boxes</p>
 </li>
 </ul>
-</div>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><strong>Testing</strong></p>
-</div>
-<div class="paragraph">
-<p>Your basecode includes unit tests to help you implement your intersection tests.
-To run unit tests, do the following</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code>raytracer&gt; ../bin/intersetion_test</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>To run your basic raytracer from bash (windows)</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code>raytracer&gt; ../bin/Debug/intersection_test</code></pre>
-</div>
 </div>
 </div>
 </div>
@@ -200,7 +243,7 @@ To run unit tests, do the following</p>
 <h2 id="_materials">4. Materials</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Implement different materials in your shader</p>
+<p>In the file, <code>materials.h</code>, implement different material.</p>
 </div>
 <div class="paragraph">
 <p><strong>Requirements</strong></p>
@@ -211,12 +254,31 @@ To run unit tests, do the following</p>
 <p>Phong shading model</p>
 </li>
 <li>
-<p>Metal (from the reading)</p>
+<p>Metal (section 9)</p>
 </li>
 <li>
-<p>Glass (from the reading)</p>
+<p>Glass (section 10)</p>
 </li>
 </ul>
+</div>
+<div class="paragraph">
+<p>Test your materials using the application implemented in <code>materials.cpp</code></p>
+</div>
+<div class="paragraph">
+<p>To run your tests from bash (mac)</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>raytracer/build&gt; ../bin/materials</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>To run your tests from bash (windows)</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>raytracer&gt; ../bin/Debug/materials</code></pre>
+</div>
 </div>
 </div>
 </div>
@@ -224,12 +286,12 @@ To run unit tests, do the following</p>
 <h2 id="_create_a_unique_image">5. Create a unique image</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Create a unique and interesting scene using your primitives. Note that you can
+<p>Create a unique and interesting scene. Note that you can
 procedurally create pattern and geometry in your scene using curves and formulas
 (same as assignment 2).</p>
 </div>
 <div class="paragraph">
-<p>Below are some Ideas</p>
+<p>Below are some ideas (choose <strong>at least</strong> 4).</p>
 </div>
 <div class="ulist">
 <ul>
@@ -237,15 +299,78 @@ procedurally create pattern and geometry in your scene using curves and formulas
 <p>Change the background colors</p>
 </li>
 <li>
-<p>Combine your finished scene with image-based effects, such as glow</p>
+<p>Change the camera position</p>
 </li>
 <li>
 <p>Arrange spheres in a snowflake, DNA helix, or fractal pattern</p>
 </li>
 <li>
 <p>Arrange triangles to make plutonic solids or other interesting surfaces</p>
+<div class="ulist">
+<ul>
+<li>
+<p>triangle</p>
+</li>
+<li>
+<p>box</p>
+</li>
+<li>
+<p>plane</p>
+</li>
+<li>
+<p>a primitive of your choice. If you use an online source, be sure to credit it. Add a file to contain your new primitive as well as unit tests.</p>
 </li>
 </ul>
+</div>
+</li>
+<li>
+<p>Implement a feature of your choice. If you use online sources as a reference, be sure to give credit.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Lights</p>
+</li>
+<li>
+<p>Volumetric effects</p>
+</li>
+<li>
+<p>Acceleration data structures</p>
+</li>
+<li>
+<p>Focal blur</p>
+</li>
+<li>
+<p>Other materials</p>
+</li>
+<li>
+<p>Textures</p>
+</li>
+<li>
+<p>Post-processing effects (you can use your PPM class for this!)</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Feel free to also improve the raytracer application so it shows you the
+image as it is computed (and allows you to stop a render).
+If you implement this feature, be sure to point it out
+in the readme! Note that you can display gifs in the readme to show off your
+renderer&#8217;s behavior!
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p><strong>Important: don&#8217;t forget to highlight the features you implement in your readme!</strong></p>
 </div>
 </div>
 </div>
@@ -253,7 +378,7 @@ procedurally create pattern and geometry in your scene using curves and formulas
 <h2 id="_update_readme_md">6. Update Readme.md</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Update <code>Readme.md</code> to include documentation on your unique features and art created with your class.</p>
+<p>Update <code>Readme.md</code> to include documentation on your unique features and images created with your raytracer.</p>
 </div>
 </div>
 </div>
@@ -278,7 +403,7 @@ procedurally create pattern and geometry in your scene using curves and formulas
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2021-03-17 20:41:03 -0400
+Last updated 2021-03-20 21:34:50 -0400
 </div>
 </div>
 </body>
