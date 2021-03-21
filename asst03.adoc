@@ -119,9 +119,9 @@ raytracer> ../bin/Debug/intesection_tests
 
 Implement *at least two* additional primitives from the following list
 
-* Planes
-* Triangles
-* Boxes
+* Planes (Implement `plane::hit` in `plane.h`)
+* Triangles (Implement `triangle::hit` in `triangle.h`)
+* Boxes (Implement `box::hit` in `box.h`)
 
 Update `intesection_tests.cpp`to test your code. Make sure you have at least 4 tests
 
@@ -132,13 +132,13 @@ Update `intesection_tests.cpp`to test your code. Make sure you have at least 4 t
 
 = Materials
 
-In the file, `materials.h`, implement different material. 
+In the file, `materials.h`, implement different materials. 
 
 **Requirements**
 
-* Phong shading model
-* Metal (section 9)
-* Glass (section 10)
+* Phong shading model (Implement `phong::scatter`)
+* Metal (section 9 - implement `metal::scatter`)
+* Glass (section 10 - implement `dielectric::scatter`)
 
 Test your materials using the application implemented in `materials.cpp`
 

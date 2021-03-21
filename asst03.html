@@ -234,13 +234,13 @@ your intersection tests.</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Planes</p>
+<p>Planes (Implement <code>plane::hit</code> in <code>plane.h</code>)</p>
 </li>
 <li>
-<p>Triangles</p>
+<p>Triangles (Implement <code>triangle::hit</code> in <code>triangle.h</code>)</p>
 </li>
 <li>
-<p>Boxes</p>
+<p>Boxes (Implement <code>box::hit</code> in <code>box.h</code>)</p>
 </li>
 </ul>
 </div>
@@ -269,7 +269,7 @@ your intersection tests.</p>
 <h2 id="_materials">4. Materials</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>In the file, <code>materials.h</code>, implement different material.</p>
+<p>In the file, <code>materials.h</code>, implement different materials.</p>
 </div>
 <div class="paragraph">
 <p><strong>Requirements</strong></p>
@@ -277,13 +277,13 @@ your intersection tests.</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Phong shading model</p>
+<p>Phong shading model (Implement <code>phong::scatter</code>)</p>
 </li>
 <li>
-<p>Metal (section 9)</p>
+<p>Metal (section 9 - implement <code>metal::scatter</code>)</p>
 </li>
 <li>
-<p>Glass (section 10)</p>
+<p>Glass (section 10 - implement <code>dielectric::scatter</code>)</p>
 </li>
 </ul>
 </div>
@@ -421,7 +421,7 @@ procedurally create pattern and geometry in your scene using curves and formulas
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2021-03-21 14:01:08 -0400
+Last updated 2021-03-21 14:22:25 -0400
 </div>
 </div>
 </body>
