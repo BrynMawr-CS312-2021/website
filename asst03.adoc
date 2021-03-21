@@ -119,6 +119,13 @@ Implement one additional primitive, such as,
 * Triangles
 * Boxes
 
+Update `intesection_tests.cpp`to test your code. Make sure you have at least 4 tests
+
+* A ray outside the primitive, which hits the object 
+* A ray inside the primitive (hits)
+* A ray outside, pointing towards the primitive that misses
+* A ray outside, pointing away from the primitive (misses)
+
 = Materials
 
 In the file, `materials.h`, implement different material. 
