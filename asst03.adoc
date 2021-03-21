@@ -171,6 +171,7 @@ ideas:
 * Other materials
 * Textures
 * Post-processing effects (you can use your PPM class for this!)
+* Enhance your raytracer so it accumulates samples across multiple frames. This will let the user see the image as it is computed. 
 
 *Be sure to highlight your unique feature in your readme!*
 
@@ -186,11 +187,6 @@ Below are some ideas (choose *at least* 4).
 * Arrange spheres in a snowflake, DNA helix, or fractal pattern
 * Arrange triangles to make plutonic solids or other interesting surfaces 
 * Use all your primitives
-
-NOTE: Feel free to also improve the raytracer application so it shows you the
-image as it is computed (and allows you to stop a render). If you implement
-this feature, be sure to point it out in the readme! Note that you can
-display gifs in the readme to show off your renderer's behavior!
 
 *Important: don't forget to highlight the features you implement in your readme!*
 
