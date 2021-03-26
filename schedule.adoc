@@ -78,7 +78,8 @@ link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=35e9145c-c
 * Read link:http://immersivemath.com/ila/ch06_matrices/ch06.html[Immersice Linear Algebra]: Chapter 6 (Matrices)
 * *Math jam*: Points, vectors, dot product, intersection testing
 * link:asst03.html[Assignment 3] is due April 5 at midnight
-* link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=def03d8c-0612-4295-9225-acf30160c8ef[Lecture 3/22/2021]
+* link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=def03d8c-0612-4295-9225-acf30160c8ef[Lecture 3/22/2021],
+link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=a9da6110-bfe5-4c2a-ab12-acf7012e86aa[Lecture 3/25/2021]
 
 //-----------------------------
 |7
