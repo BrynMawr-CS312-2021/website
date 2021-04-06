@@ -96,7 +96,8 @@ link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=a9da6110-b
 * Topics: Event loops and callbacks, graphics pipeline, buffers, transformation matrices, projections
 * Read link:https://antongerdelan.net/opengl/hellotriangle.html[Hello Triangle]
 * Read link:https://learnopengl.com/Getting-started/Coordinate-Systems[OpenGL Coordinate Systems] 
-* link:asst04.html[Assignment 4] is due April 12 at midnight
+* link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=5cd121ab-001d-4d9d-bfea-ad0101544a30[Lecture 4/5/2021],
+* *Lab: Math jam*: Coordinate frames, Transformations
 
 //-----------------------------
 |9
@@ -104,8 +105,8 @@ link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=a9da6110-b
 |*Meshes* anchor:meshes[]
 
 * Topics: mesh representations, texturing
-* link:asst05.html[Assignment 5] is due April 19 at midnight
-* *Lab: Math jam*: Coordinate frames, Transformations, projections
+* link:asst04.html[Assignment 4] is due April 19 at midnight
+* *Lab: Math jam*: Graphics pipeline, Projections
 
 //-----------------------------
 |10
@@ -113,7 +114,7 @@ link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=a9da6110-b
 |*Particle systems* anchor:particlesystem[]
 
 * Billboards, sprites, physically-based simulation, alpha blending and transparency
-* link:asst06.html[Assignment 6] is due April 22 at midnight
+* link:asst05.html[Assignment 5] is due April 29 at midnight
 * Lab: Office Hours
 
 //-----------------------------
