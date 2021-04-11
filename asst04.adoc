@@ -113,7 +113,16 @@ Your mesh should
 
 The mesh class must implement the following API:
 
-* TODO
+* Mesh()
+* ~Mesh()
+* loadPLY(const std::string& filename)
+* getMinBounds() 
+* getMaxBounds() 
+* numVertices() 
+* positions() 
+* normals()
+* numTriangles() 
+* indices() 
 
 Feel free to add additional methods as needed.
 
