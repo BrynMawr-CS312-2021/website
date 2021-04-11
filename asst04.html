@@ -17,16 +17,15 @@
 <li><a href="#_assignment_4_give_it_your_best_ply">Assignment 4: Give it your best PLY</a></li>
 <li><a href="#_getting_started">1. Getting started</a></li>
 <li><a href="#_getting_started_2">2. Getting started</a></li>
-<li><a href="#_mesh_viewer">3. Mesh viewer</a>
+<li><a href="#_a_simple_mesh">3. A simple mesh</a></li>
+<li><a href="#_mesh_viewer">4. Mesh viewer</a>
 <ul class="sectlevel2">
-<li><a href="#_meshes">3.1. Meshes</a></li>
-<li><a href="#_user_controls">3.2. User controls</a></li>
-<li><a href="#_blinn_phong_shading">3.3. Blinn-Phong shading</a></li>
-<li><a href="#_unique_features">3.4. Unique features</a></li>
+<li><a href="#_meshes">4.1. Meshes</a></li>
 </ul>
 </li>
-<li><a href="#_update_readme_md">4. Update Readme.md</a></li>
-<li><a href="#_what_to_hand_in">5. What to hand in</a></li>
+<li><a href="#_mesh_demo">5. Mesh demo</a></li>
+<li><a href="#_update_readme_md">6. Update Readme.md</a></li>
+<li><a href="#_what_to_hand_in">7. What to hand in</a></li>
 </ul>
 </div>
 </div>
@@ -52,7 +51,7 @@
 <p>Implement blinn-phong materials using shaders</p>
 </li>
 <li>
-<p>Try importing your own models and/or implementing your own shaders</p>
+<p>Try importing your own models, and implementing your own effects and shaders</p>
 </li>
 </ul>
 </div>
@@ -87,26 +86,187 @@ The examples from lecture can be found <a href="https://github.com/BrynMawr-CS31
 </div>
 </div>
 <div class="sect1">
-<h2 id="_mesh_viewer">3. Mesh viewer</h2>
+<h2 id="_a_simple_mesh">3. A simple mesh</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Look at file, <code>main.cpp</code>.</p>
-</div>
-<div class="paragraph">
-<p>When you run this program, you should see:</p>
+<p>Modify <code>simple.cpp</code> to draw a simple pyramidal mesh using vbos and an index buffer (here is a good <a href="http://www.opengl-tutorial.org/intermediate-tutorials/tutorial-9-vbo-indexing/">reference</a>).</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="img/A04/todo.png" alt="todo">
+<img src="img/A04/simple-onetri.png" alt="simple onetri">
 </div>
+</div>
+<div class="paragraph">
+<p>You are given an implementation that draws a single triangle with corners
+(1,-1,0.5), (-1,-1,0.5), and (0,1,0.5). You are also given a shder, <code>unlit</code>, that colors
+each vertex based on its normal. Add two more triangles with the following
+coordinates:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>(-1,-1,0.5), (0,-1,-0.5), and (0,1,0.5)</p>
+</li>
+<li>
+<p>(0,-1,-0.5), (1,-1,0.5), and (0,1,0.5)</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Your application using the default orthographic projection and camera.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Modify your program to use a perspective projection.</p>
+</li>
+<li>
+<p>Modify your program to support a camera that rotates around the origin with the mouse.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Dragging with the left mouse down should rotate the camera around the origin.</p>
+</li>
+<li>
+<p>SHIFT+Drag with the left mouse button down should move the camera towards and away from the origin</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Perspective projection</strong></p>
+</div>
+<div class="paragraph">
+<p>Define a <code>mat4</code> to hold the projection. Use the function <code>glm::perspective</code>
+to set the properties of the projection.</p>
+</div>
+<div class="paragraph">
+<p><strong>Camera controls</strong></p>
+</div>
+<div class="paragraph">
+<p>Define a <code>mat4</code> to hold the current camera orientation and position. Use the function
+<code>glm::lookat</code> to set its properties. To implement a camera that orbits around the origin:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>lookat</code> position will be (0,0,0)</p>
+</li>
+<li>
+<p><code>lookfrom</code> position should rotate horizontally around the Y axis and elevate vertically around the XZ plane. This is most easily implemented using polar coordinates. Let <code>azimuth</code> be the rotation around the Y axis, <code>elevation</code> be the vertical rotation, and <code>dist</code> by the distance from the origin. Then the position <code>lookfrom</code> is</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>x = Dist * sin(Azimuth) * cos(Elevation)
+y = Dist * sin(Elevation)
+z = Dist * cos(Azimuth) * cos(Elevation)</pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>In the <code>cursor_position_callback</code>, compute the change in mouse movement from the last frame and use the changes in the horizontal and vertical directions to modify <code>Azimuth</code> and <code>Elevation</code>. When SHIFT is pressed, modify <code>Dist</code>.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/A04/simple-threetri.gif" alt="simple threetri">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_mesh_viewer">4. Mesh viewer</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Implement an application that can preview the meshes in the <code>/models</code> directory.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/A04/mesh-viewer.gif" alt="mesh viewer">
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Controls</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>n or N goes to the next model</p>
+</li>
+<li>
+<p>p or P goes to the previous model</p>
+</li>
+<li>
+<p>Left-drag orbits the camera around the model</p>
+</li>
+<li>
+<p>SHIFT-left drag zooms in and out</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Features/Requirements</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>When loading a model, your must ensure that the model fits inside in the view volume. You can either scale and translate the model to make it fit, or modify the camera and projection (your choice).</p>
+</li>
+<li>
+<p>Your model should be rendered with phong-blinn shading. Implement your shader in <code>phong.vs</code> and <code>phong.fs</code></p>
+</li>
+<li>
+<p>Your viewer should support the same camera controls as the simple mesh viewer</p>
+</li>
+<li>
+<p>Your Mesh class should not leak memory</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>You are given basecode for this assignment. Window and openGL features are in <code>meshviewer.cpp</code>.
+Your mesh code is in <code>mesh.h</code> and <code>mesh.cpp</code>.</p>
 </div>
 <div class="sect2">
-<h3 id="_meshes">3.1. Meshes</h3>
+<h3 id="_meshes">4.1. Meshes</h3>
 <div class="paragraph">
-<p>Implement a class <code>Mesh</code> that is capable of loading <a href="http://paulbourke.net/dataformats/ply/">PLY files</a>.</p>
+<p>Implement a class <code>Mesh</code> that is capable of loading <a href="http://paulbourke.net/dataformats/ply/">PLY files</a>.
+Your mesh should</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>represent triangles using vbos and indexed lists</p>
+</li>
+<li>
+<p>load the PLY file format</p>
+</li>
+<li>
+<p>compute the axis-aligned bounding box for its vertices</p>
+</li>
+</ul>
 </div>
 <div class="paragraph">
-<p><strong>Loading PLY files</strong></p>
+<p>The mesh class must implement the following API:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>TODO</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Feel free to add additional methods as needed.</p>
+</div>
+<div class="paragraph">
+<p><strong>The PLY file format</strong></p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -134,116 +294,22 @@ end_header
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_user_controls">3.2. User controls</h3>
-<div class="paragraph">
-<p><strong>Changing models</strong></p>
 </div>
-<div class="paragraph">
-<p>Your project contains 43 PLY files in the <code>/models</code> directory. The user
-should be able to change the currently viewed model using the keyboard.</p>
 </div>
-<div class="ulist">
-<ul>
-<li>
-<p>n or N should display the next model</p>
-</li>
-<li>
-<p>p or P should display the previous model</p>
-</li>
-</ul>
+<div class="sect1">
+<h2 id="_mesh_demo">5. Mesh demo</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Implement your own mesh demo in the file <code>meshdemo.cpp</code>.</p>
 </div>
 <div class="paragraph">
-<p><strong>Initializing the view</strong></p>
+<p>Add <strong>at least one</strong> unique feature to your viewer.</p>
 </div>
 <div class="paragraph">
-<p>Each model has a different size. Compute the bounding box for each model and
-use it to initialize the camera and projection matrix so that each model fits into the
-view volume without clipping.</p>
-</div>
-<div class="paragraph">
-<p><strong>Camera controls</strong></p>
-</div>
-<div class="paragraph">
-<p>Implement an orbit camera for and keyboard controls for your viewer. This behavior
-is equivalent to rotating the camera in blender using the middle mouse button.</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Click and dragging the mouse left and right should rotate the camera horizontally</p>
-</li>
-<li>
-<p>Click and dragging the mouse up and down should rotate the camera vertically</p>
-</li>
-<li>
-<p>SHIFT+Click and dragging the mouse should translate the camera forward and back</p>
-</li>
-</ul>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-For a single object, we can implement the same behavior by rotating the model,
-instead of the camera. However, an orbit camera is something you can re-use in other
-applications!
-</td>
-</tr>
-</table>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_blinn_phong_shading">3.3. Blinn-Phong shading</h3>
-<div class="paragraph">
-<p>Implement Blinn-Phong shaders, <code>blinn-phong.vert</code> and <code>blinn-phong.frag</code>.</p>
-</div>
-<div class="paragraph">
-<p>You will notice that our models have a faceted appearance.</p>
-</div>
-<div class="paragraph">
-<p>todo:image</p>
-</div>
-<div class="paragraph">
-<p>The issue is that each triangle has its own normal. For the model to look
-smooth, we need to average the normal at each vertex.
-Note that there&#8217;s a fast and slow way to implement this
-(credit: Harvard Extension School, Fall 2002):</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code>// The slow way
-For each vertex // main outer loop
-   // this means searching through all triangles every iteration!
-   Find triangles that hook up to this vertex // time consuming!
-   Get average of those, and assign to this vertex
-
-// A faster way
-For each triangle // main outer loop
-   For each of 3 vertices
-       vertex.normal += triangle.normal
-For each vertex
-   vertex.normal.normalize()</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>The above code assumes that the triangle normals have been precalculated and
-that the vertex normals start at zero. We also assume that triangle normals
-are stored separated from vertex normals.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_unique_features">3.4. Unique features</h3>
-<div class="paragraph">
-<p>Add <strong>at least one</strong> unique model, feature, or shading effect to your viewer.</p>
-</div>
-<div class="paragraph">
-<p>You can export PLY files from Blender. Try finding a free model online and
-converting to PLY, or even create a model of your own! Be sure to credit the
-artist if you use someone else&#8217;s work.</p>
+<p>You can also add new files for your viewer. You can export PLY files from
+Blender. Try finding a free model online and converting to PLY, or even
+create a model of your own! Be sure to credit the artist if you use someone
+else&#8217;s work.</p>
 </div>
 <div class="paragraph">
 <p>Ideas for unique features:</p>
@@ -251,33 +317,29 @@ artist if you use someone else&#8217;s work.</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Display the frame rate</p>
+<p>Implement your own shader: you might try toon shading, procedural textures, or color effects</p>
 </li>
 <li>
-<p>Compute and display the time needed to load each model</p>
-</li>
-<li>
-<p>Implement your own shader: toon shading</p>
-</li>
-<li>
-<p>Implement your own shader: procedural color patterns</p>
-</li>
-<li>
-<p>Implement your own shader: jitter colors or normals to create different effects</p>
-</li>
-<li>
-<p>Use textures to create a unique shader. Or load a model with texture coordinates and map a texture to the model.</p>
+<p>Support textures. Load UV coordinates and pass them to your shader along with an image.</p>
 </li>
 <li>
 <p>Animate the vertices of the model in your vertex shader</p>
+</li>
+<li>
+<p>Add a feature to animate the light source</p>
+</li>
+<li>
+<p>Implement per-pixel lighting</p>
+</li>
+<li>
+<p>Implement features that allow a user to edit a model</p>
 </li>
 </ul>
 </div>
 </div>
 </div>
-</div>
 <div class="sect1">
-<h2 id="_update_readme_md">4. Update Readme.md</h2>
+<h2 id="_update_readme_md">6. Update Readme.md</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Update <code>Readme.md</code> to include documentation on your unique features and images created with your mesh-viewer.</p>
@@ -285,7 +347,7 @@ artist if you use someone else&#8217;s work.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_what_to_hand_in">5. What to hand in</h2>
+<h2 id="_what_to_hand_in">7. What to hand in</h2>
 <div class="sectionbody">
 <div class="olist arabic">
 <ol class="arabic">
@@ -305,7 +367,7 @@ artist if you use someone else&#8217;s work.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2021-04-07 14:38:38 -0400
+Last updated 2021-04-11 13:59:17 -0400
 </div>
 </div>
 </body>

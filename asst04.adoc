@@ -14,7 +14,7 @@ The goals for this assignment are:
 * Implement an interactive model viewer using openGL 4.0+
 * Read and display meshes in PLY file format
 * Implement blinn-phong materials using shaders
-* Try importing your own models and/or implementing your own shaders
+* Try importing your own models, and implementing your own effects and shaders
 
 :sectnums:
 
@@ -35,19 +35,89 @@ for vectors, points, and colors (all have type glm::vec3)
 Make sure that you can build and run the examples from lecture.
 The examples from lecture can be found link:https://github.com/BrynMawr-CS312-2021/opengl-examples[here].
 
+= A simple mesh
+
+Modify `simple.cpp` to draw a simple pyramidal mesh using vbos and an index buffer (here is a good link:http://www.opengl-tutorial.org/intermediate-tutorials/tutorial-9-vbo-indexing/[reference]).
+
+image::A04/simple-onetri.png[]
+
+You are given an implementation that draws a single triangle with corners 
+(1,-1,0.5), (-1,-1,0.5), and (0,1,0.5). You are also given a shder, `unlit`, that colors 
+each vertex based on its normal. Add two more triangles with the following 
+coordinates:
+
+* (-1,-1,0.5), (0,-1,-0.5), and (0,1,0.5)
+* (0,-1,-0.5), (1,-1,0.5), and (0,1,0.5)
+
+Your application using the default orthographic projection and camera. 
+
+* Modify your program to use a perspective projection.  
+* Modify your program to support a camera that rotates around the origin with the mouse. 
+** Dragging with the left mouse down should rotate the camera around the origin. 
+** SHIFT+Drag with the left mouse button down should move the camera towards and away from the origin
+
+*Perspective projection*
+
+Define a `mat4` to hold the projection. Use the function `glm::perspective`
+to set the properties of the projection.
+
+*Camera controls*
+
+Define a `mat4` to hold the current camera orientation and position. Use the function 
+`glm::lookat` to set its properties. To implement a camera that orbits around the origin:
+
+* `lookat` position will be (0,0,0)
+* `lookfrom` position should rotate horizontally around the Y axis and elevate vertically around the XZ plane. This is most easily implemented using polar coordinates. Let `azimuth` be the rotation around the Y axis, `elevation` be the vertical rotation, and `dist` by the distance from the origin. Then the position `lookfrom` is
+[source]
+----
+x = Dist * sin(Azimuth) * cos(Elevation) 
+y = Dist * sin(Elevation)
+z = Dist * cos(Azimuth) * cos(Elevation)
+----
+* In the `cursor_position_callback`, compute the change in mouse movement from the last frame and use the changes in the horizontal and vertical directions to modify `Azimuth` and `Elevation`. When SHIFT is pressed, modify `Dist`.
+
+image::A04/simple-threetri.gif[]
+
 = Mesh viewer
 
-Look at file, `main.cpp`. 
+Implement an application that can preview the meshes in the `/models` directory.
 
-When you run this program, you should see:
+image::A04/mesh-viewer.gif[]
 
-image::A04/todo.png[]
+*Controls*
+
+* n or N goes to the next model
+* p or P goes to the previous model
+* Left-drag orbits the camera around the model
+* SHIFT-left drag zooms in and out
+
+*Features/Requirements*
+
+* When loading a model, your must ensure that the model fits inside in the view volume. You can either scale and translate the model to make it fit, or modify the camera and projection (your choice).
+* Your model should be rendered with phong-blinn shading. Implement your shader in `phong.vs` and `phong.fs`
+* Your viewer should support the same camera controls as the simple mesh viewer 
+* Your Mesh class should not leak memory
+
+You are given basecode for this assignment. Window and openGL features are in `meshviewer.cpp`. 
+Your mesh code is in `mesh.h` and `mesh.cpp`. 
+
 
 == Meshes
 
 Implement a class `Mesh` that is capable of loading link:http://paulbourke.net/dataformats/ply/[PLY files].
+Your mesh should 
 
-**Loading PLY files**
+* represent triangles using vbos and indexed lists
+* load the PLY file format 
+* compute the axis-aligned bounding box for its vertices 
+
+The mesh class must implement the following API:
+
+* TODO
+
+Feel free to add additional methods as needed.
+
+**The PLY file format**
 
 [source]
 ----
@@ -71,85 +141,25 @@ end_header
 
 image::A04/PLYFileAdvice-ExtSchool.png[]
 
-== User controls
+= Mesh demo
 
-*Changing models*
+Implement your own mesh demo in the file `meshdemo.cpp`.
 
-Your project contains 43 PLY files in the `/models` directory. The user
-should be able to change the currently viewed model using the keyboard.
+Add *at least one* unique feature to your viewer. 
 
-* n or N should display the next model
-* p or P should display the previous model
-
-*Initializing the view*
-
-Each model has a different size. Compute the bounding box for each model and 
-use it to initialize the camera and projection matrix so that each model fits into the 
-view volume without clipping.
-
-*Camera controls*
-
-Implement an orbit camera for and keyboard controls for your viewer. This behavior 
-is equivalent to rotating the camera in blender using the middle mouse button.
-
-* Click and dragging the mouse left and right should rotate the camera horizontally
-* Click and dragging the mouse up and down should rotate the camera vertically
-* SHIFT+Click and dragging the mouse should translate the camera forward and back
-
-NOTE: For a single object, we can implement the same behavior by rotating the model, 
-instead of the camera. However, an orbit camera is something you can re-use in other 
-applications! 
-
-== Blinn-Phong shading
-
-Implement Blinn-Phong shaders, `blinn-phong.vert` and `blinn-phong.frag`. 
-
-You will notice that our models have a faceted appearance. 
-
-todo:image
-
-The issue is that each triangle has its own normal. For the model to look 
-smooth, we need to average the normal at each vertex. 
-Note that there's a fast and slow way to implement this 
-(credit: Harvard Extension School, Fall 2002):
-
-[source]
-----
-// The slow way
-For each vertex // main outer loop
-   // this means searching through all triangles every iteration!
-   Find triangles that hook up to this vertex // time consuming!
-   Get average of those, and assign to this vertex
-
-// A faster way
-For each triangle // main outer loop
-   For each of 3 vertices
-       vertex.normal += triangle.normal
-For each vertex
-   vertex.normal.normalize()
-----
-
-The above code assumes that the triangle normals have been precalculated and
-that the vertex normals start at zero. We also assume that triangle normals
-are stored separated from vertex normals.
-
-== Unique features
-
-Add *at least one* unique model, feature, or shading effect to your viewer. 
-
-You can export PLY files from Blender. Try finding a free model online and
-converting to PLY, or even create a model of your own! Be sure to credit the
-artist if you use someone else's work.
+You can also add new files for your viewer. You can export PLY files from
+Blender. Try finding a free model online and converting to PLY, or even
+create a model of your own! Be sure to credit the artist if you use someone
+else's work.
 
 Ideas for unique features:
 
-* Display the frame rate
-* Compute and display the time needed to load each model
-* Implement your own shader: toon shading
-* Implement your own shader: procedural color patterns
-* Implement your own shader: jitter colors or normals to create different effects
-* Use textures to create a unique shader. Or load a model with texture coordinates and map a texture to the model.
+* Implement your own shader: you might try toon shading, procedural textures, or color effects
+* Support textures. Load UV coordinates and pass them to your shader along with an image. 
 * Animate the vertices of the model in your vertex shader
+* Add a feature to animate the light source
+* Implement per-pixel lighting
+* Implement features that allow a user to edit a model
 
 = Update Readme.md
 
