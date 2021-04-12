@@ -101,18 +101,22 @@ link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=a9da6110-b
 * link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=5cd121ab-001d-4d9d-bfea-ad0101544a30[Lecture 4/5/2021],
 link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=4a6f0b53-420d-4edb-95ae-ad040157ca87[Lecture 4/8/2021]
 * *Lab: Math jam*: Coordinate frames, Transformations
+* (Optional) Real-time Rendering, Chpt 2 (Graphics Pipeline)
 
 //-----------------------------
 |9
 |April 12,15
 |*Meshes* anchor:meshes[]
 
-* Topics: model-view-projection matrix, mesh representations, texturing
+* Topics: model-view-projection matrix, mesh representations, shaders, texturing
 * link:asst04.html[Assignment 4] is due April 19 at midnight
+* Read link:http://www.opengl-tutorial.org/intermediate-tutorials/tutorial-9-vbo-indexing/[Meshes: VBO Indexing]
 * Read link:http://www.opengl-tutorial.org/beginners-tutorials/tutorial-3-matrices/[OpenGL Matrix tutorial]
 * Reference link:https://learnopengl.com/Getting-started/Coordinate-Systems[OpenGL Coordinate Systems] 
 * Reference link:https://glm.g-truc.net/0.9.4/api/a00151.html#ga8925161ecc1767957900c5ca8b922dc4[GLM matrix reference]
-* *Lab: Math jam*: Graphics pipeline, Projections
+* link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=0e90dd08-b34d-4764-a959-ad08015454c1[Lecture 4/12/2021]
+* Lab: Office Hours
+
 
 //-----------------------------
 |10

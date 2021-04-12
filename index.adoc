@@ -12,8 +12,8 @@ include::header.adoc[]
 [.anns]
 == Announcements
 [unstyled]
-* Topic this week: link:#opengl[Transformations and real-time graphics]
-* link:asst03.html[Assignment 3] is due April 8 at midnight
+* Topic this week: link:#meshes[Real-time graphics: meshes and shaders]
+* link:asst04.html[Assignment 4] is due April 19 at midnight
 
 == **Schedule**
 
