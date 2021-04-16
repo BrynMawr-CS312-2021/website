@@ -122,9 +122,9 @@ link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=0a657d1c-9
 //-----------------------------
 |10
 |April 19,22
-|*Particle systems* anchor:particlesystem[]
+|*Particle systems* anchor:particles[]
 
-* Billboards, sprites, physically-based simulation, alpha blending and transparency
+* Billboards, sprites, textures, alpha blending and transparency
 * link:asst05.html[Assignment 5] is due April 29 at midnight
 * Lab: Office Hours
 

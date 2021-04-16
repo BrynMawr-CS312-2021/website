@@ -197,6 +197,20 @@ end_header
 
 image::A04/PLYFileAdvice-ExtSchool.png[]
 
+== Shading examples
+
+Using the unlit shader (default)
+
+image::A04/cow-unlit.gif[]
+
+Using per-vertex phong shading
+
+image::A04/cow-phong-pervertex.gif[]
+
+Using per-pixel phong shading
+
+image::A04/cow-phong-perpixel.gif[]
+
 = Mesh demo
 
 Implement your own mesh demo in the file `meshdemo.cpp`.
@@ -216,6 +230,10 @@ Ideas for unique features:
 * Add a feature to animate the light source
 * Implement per-pixel lighting
 * Implement features that allow a user to edit a model
+
+Below is the cow with toon shading
+
+image::A04/cow-toon.gif[]
 
 = Update Readme.md
 
