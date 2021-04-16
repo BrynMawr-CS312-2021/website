@@ -41,15 +41,35 @@ Modify `simple.cpp` to draw a simple pyramidal mesh using vbos and an index buff
 
 image::A04/simple-onetri.png[]
 
+You are given basecode which renders one triangle. To run it from your build 
+directory on windows
+
+[source]
+----
+build $ ../bin/Debug/mesh-simple.exe 
+----
+
+and on mac
+
+[source]
+----
+build $ ../bin/mesh-simple
+----
+
 You are given an implementation that draws a single triangle with corners 
-(1,-1,0.5), (-1,-1,0.5), and (0,1,0.5). You are also given a shder, `unlit`, that colors 
+(1,-1,0.5), (-1,-1,0.5), and (0,1,0.5). You are also given a shader, `unlit`, that colors 
 each vertex based on its normal. Add two more triangles with the following 
 coordinates:
 
 * (-1,-1,0.5), (0,-1,-0.5), and (0,1,0.5)
 * (0,-1,-0.5), (1,-1,0.5), and (0,1,0.5)
 
-Your application using the default orthographic projection and camera. 
+This example uses _flat_ shading, so we will repeat the vertices for 
+each triangle. Your new *positions* buffer will have 9 vertices (27 floats) in it; 
+your new *normals* buffer will have 9 (27 floats) directions in it; and your new *indices* 
+buffer will have 9 indexes in its. The number of triangles will now be 3.
+
+Your application is using the default orthographic projection and camera. 
 
 * Modify your program to use a perspective projection.  
 * Modify your program to support a camera that rotates around the origin with the mouse. 
@@ -60,6 +80,12 @@ Your application using the default orthographic projection and camera.
 
 Define a `mat4` to hold the projection. Use the function `glm::perspective`
 to set the properties of the projection.
+
+Add a uniform mat4 variable, `mvp`, to your vertex shader, `unlit.vs`. This variable will 
+hold the model-view-projection matrix from your application. 
+
+Modify `simple.cpp` to set the value of `mvp` using `glUniformMatrix4fv`. See the class example, 
+`triangle-shadermvp.cpp` for an example.
 
 *Camera controls*
 
@@ -75,6 +101,7 @@ y = Dist * sin(Elevation)
 z = Dist * cos(Azimuth) * cos(Elevation)
 ----
 * In the `cursor_position_callback`, compute the change in mouse movement from the last frame and use the changes in the horizontal and vertical directions to modify `Azimuth` and `Elevation`. When SHIFT is pressed, modify `Dist`.
+* Modify your program to send the combined view and projection matrices to your shader
 
 image::A04/simple-threetri.gif[]
 
@@ -101,6 +128,20 @@ image::A04/mesh-viewer.gif[]
 You are given basecode for this assignment. Window and openGL features are in `meshviewer.cpp`. 
 Your mesh code is in `mesh.h` and `mesh.cpp`. 
 
+You are given basecode which renders one triangle. To run it from your build 
+directory on windows
+
+[source]
+----
+build $ ../bin/Debug/mesh-viewer.exe 
+----
+
+and on mac
+
+[source]
+----
+build $ ../bin/mesh-viewer
+----
 
 == Meshes
 
@@ -109,7 +150,10 @@ Your mesh should
 
 * represent triangles using vbos and indexed lists
 * load the PLY file format 
-* compute the axis-aligned bounding box for its vertices 
+* compute the axis-aligned bounding box for its vertices. An axis-aligned bounding box consists of
+** the minimum values of x, y, and z
+** the maximum values of x, y, and z
+You can compute the minimum and maximum values when you load the PLY file.
 
 The mesh class must implement the following API:
 

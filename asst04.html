@@ -97,8 +97,25 @@ The examples from lecture can be found <a href="https://github.com/BrynMawr-CS31
 </div>
 </div>
 <div class="paragraph">
+<p>You are given basecode which renders one triangle. To run it from your build
+directory on windows</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>build $ ../bin/Debug/mesh-simple.exe</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>and on mac</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>build $ ../bin/mesh-simple</code></pre>
+</div>
+</div>
+<div class="paragraph">
 <p>You are given an implementation that draws a single triangle with corners
-(1,-1,0.5), (-1,-1,0.5), and (0,1,0.5). You are also given a shder, <code>unlit</code>, that colors
+(1,-1,0.5), (-1,-1,0.5), and (0,1,0.5). You are also given a shader, <code>unlit</code>, that colors
 each vertex based on its normal. Add two more triangles with the following
 coordinates:</p>
 </div>
@@ -113,7 +130,13 @@ coordinates:</p>
 </ul>
 </div>
 <div class="paragraph">
-<p>Your application using the default orthographic projection and camera.</p>
+<p>This example uses <em>flat</em> shading, so we will repeat the vertices for
+each triangle. Your new <strong>positions</strong> buffer will have 9 vertices (27 floats) in it;
+your new <strong>normals</strong> buffer will have 9 (27 floats) directions in it; and your new <strong>indices</strong>
+buffer will have 9 indexes in its. The number of triangles will now be 3.</p>
+</div>
+<div class="paragraph">
+<p>Your application is using the default orthographic projection and camera.</p>
 </div>
 <div class="ulist">
 <ul>
@@ -143,6 +166,14 @@ coordinates:</p>
 to set the properties of the projection.</p>
 </div>
 <div class="paragraph">
+<p>Add a uniform mat4 variable, <code>mvp</code>, to your vertex shader, <code>unlit.vs</code>. This variable will
+hold the model-view-projection matrix from your application.</p>
+</div>
+<div class="paragraph">
+<p>Modify <code>simple.cpp</code> to set the value of <code>mvp</code> using <code>glUniformMatrix4fv</code>. See the class example,
+<code>triangle-shadermvp.cpp</code> for an example.</p>
+</div>
+<div class="paragraph">
 <p><strong>Camera controls</strong></p>
 </div>
 <div class="paragraph">
@@ -170,6 +201,9 @@ z = Dist * cos(Azimuth) * cos(Elevation)</pre>
 <ul>
 <li>
 <p>In the <code>cursor_position_callback</code>, compute the change in mouse movement from the last frame and use the changes in the horizontal and vertical directions to modify <code>Azimuth</code> and <code>Elevation</code>. When SHIFT is pressed, modify <code>Dist</code>.</p>
+</li>
+<li>
+<p>Modify your program to send the combined view and projection matrices to your shader</p>
 </li>
 </ul>
 </div>
@@ -233,6 +267,23 @@ z = Dist * cos(Azimuth) * cos(Elevation)</pre>
 <p>You are given basecode for this assignment. Window and openGL features are in <code>meshviewer.cpp</code>.
 Your mesh code is in <code>mesh.h</code> and <code>mesh.cpp</code>.</p>
 </div>
+<div class="paragraph">
+<p>You are given basecode which renders one triangle. To run it from your build
+directory on windows</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>build $ ../bin/Debug/mesh-viewer.exe</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>and on mac</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>build $ ../bin/mesh-viewer</code></pre>
+</div>
+</div>
 <div class="sect2">
 <h3 id="_meshes">4.1. Meshes</h3>
 <div class="paragraph">
@@ -248,7 +299,18 @@ Your mesh should</p>
 <p>load the PLY file format</p>
 </li>
 <li>
-<p>compute the axis-aligned bounding box for its vertices</p>
+<p>compute the axis-aligned bounding box for its vertices. An axis-aligned bounding box consists of</p>
+<div class="ulist">
+<ul>
+<li>
+<p>the minimum values of x, y, and z</p>
+</li>
+<li>
+<p>the maximum values of x, y, and z
+You can compute the minimum and maximum values when you load the PLY file.</p>
+</li>
+</ul>
+</div>
 </li>
 </ul>
 </div>
@@ -397,7 +459,7 @@ else&#8217;s work.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2021-04-12 17:48:56 -0400
+Last updated 2021-04-15 17:08:05 -0400
 </div>
 </div>
 </body>
