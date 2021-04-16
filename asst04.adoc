@@ -201,7 +201,7 @@ image::A04/PLYFileAdvice-ExtSchool.png[]
 
 Using the unlit shader (default)
 
-image::A04/cow-unlit.gif[]
+image::A04/cow-unlit.png[]
 
 Using per-vertex phong shading
 
