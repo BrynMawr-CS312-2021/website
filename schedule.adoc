@@ -112,6 +112,7 @@ link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=4a6f0b53-4
 * link:asst04.html[Assignment 4] is due April 19 at midnight
 * Read link:http://www.opengl-tutorial.org/intermediate-tutorials/tutorial-9-vbo-indexing/[Meshes: VBO Indexing]
 * Read link:http://www.opengl-tutorial.org/beginners-tutorials/tutorial-3-matrices/[OpenGL Matrix tutorial]
+* Read link:https://people.inf.elte.hu/plisaai/pdf/David%20Wolff%20-%20OpenGL%204.0%20Shading%20Language%20Cookbook%20(2).pdf[OpenGL 4.0 Cookbook, Chpt 2]
 * Reference link:https://learnopengl.com/Getting-started/Coordinate-Systems[OpenGL Coordinate Systems] 
 * Reference link:https://glm.g-truc.net/0.9.4/api/a00151.html#ga8925161ecc1767957900c5ca8b922dc4[GLM matrix reference]
 * link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=0e90dd08-b34d-4764-a959-ad08015454c1[Lecture 4/12/2021]
