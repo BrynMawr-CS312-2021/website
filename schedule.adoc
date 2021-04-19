@@ -126,6 +126,7 @@ link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=0a657d1c-9
 
 * Billboards, sprites, textures, alpha blending and transparency
 * link:asst05.html[Assignment 5] is due April 29 at midnight
+* link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=e2dbbdf3-c6e6-4c96-ac0d-ad0f0162b477[Lecture 4/19/2021]
 * Lab: Office Hours
 
 //-----------------------------
