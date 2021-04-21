@@ -12,8 +12,9 @@ include::header.adoc[]
 [.anns]
 == Announcements
 [unstyled]
-* Topic this week: link:#meshes[Real-time graphics: meshes and shaders]
-* link:asst04.html[Assignment 4] is due April 19 at midnight
+* Topic this week: link:#particles[Real-time graphics: particle systems]
+* *No lecture Thursday, April 22*. Instead, link:https://i3dsymposium.github.io/2021/[join I3D 2021!]
+* link:asst05.html[Assignment 5] is due April 29 at midnight
 
 == **Schedule**
 
