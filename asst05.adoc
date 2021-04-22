@@ -123,7 +123,7 @@ in relationship to the camera. The blending cannot work correctly if the particl
 you should also sort the particles in `update`.
 
 * You can call `theRenderer.cameraPosition()` to get the camera position.
-* You can use a _sorting shortcut_ which takes advantage of the fact that particles do not shift too much between frames (called _spatial and temporal consistency_). In this approach, go through the list once, compare consecutive particles, and swap if one particle should be in front of another. 
+* You can use a _sorting shortcut_ which takes advantage of the fact that particles do not shift too much between frames (called _spatial and temporal coherency_). In this approach, go through the list once, compare consecutive particles, and swap if one particle should be in front of another. 
 
 [source]
 ----
@@ -162,6 +162,8 @@ and on mac
 ----
 build $ ../bin/demo
 ----
+
+video::A05/fire.mp4[]
 
 = Update Readme.md
 
