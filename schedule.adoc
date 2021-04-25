@@ -135,23 +135,24 @@ link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=0a657d1c-9
 |*Ray marching* anchor:raymarch[]
 
 * Volumetric rendering, constructive solid geometry, shadertoy
+* link:project.html[Project details]
 * Lab: Office Hours
-* *Project proposals due*
 
 //-----------------------------
 |12
 |May 3,6
-|*Advanced Shaders*
+|*Advanced shaders*
 
-* Potential topics: noise, non-photorealistic rendering, glow, BRDFs, HDR
-* Potential topics: noise, non-photorealistic rendering, glow, BRDFs
-* Lab: Project introductions
+* Potential topics: noise, non-photorealistic rendering, glow, BRDFs, HDR, shadows
+* *May 3: Project ideas due* 
+* *May 6: Project presentations (in Lecture)* 
+* *May 6: Project proposals due* 
 
 //-----------------------------
 |13
 |May 10,13
 |*Advanced topics*
 
-* Lab: Project status report
+* Potential topics: BRDFs, procedural modeling
 
 |===

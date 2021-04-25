@@ -12,9 +12,9 @@ include::header.adoc[]
 [.anns]
 == Announcements
 [unstyled]
-* Topic this week: link:#particles[Real-time graphics: particle systems]
-* *No lecture Thursday, April 22*. Instead, link:https://i3dsymposium.github.io/2021/[join I3D 2021!]
+* Topic this week: link:#raymarch[Shader-based raytracing and ray marching]
 * link:asst05.html[Assignment 5] is due April 29 at midnight
+* link:project.html[Final project]. Ideas are due May 3rd. Proposals are due May 6th.
 
 == **Schedule**
 
