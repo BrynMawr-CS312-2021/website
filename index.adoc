@@ -12,7 +12,7 @@ include::header.adoc[]
 [.anns]
 == Announcements
 [unstyled]
-* Topic this week: link:#raymarch[Shader-based raytracing and ray marching]
+* Topic this week: link:#pipeline2[Details of the graphics pipeline]
 * link:asst05.html[Assignment 5] is due April 29 at midnight
 * link:project.html[Final project]. Ideas are due May 3rd. Proposals are due May 6th.
 

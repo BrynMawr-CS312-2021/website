@@ -132,18 +132,19 @@ link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=0a657d1c-9
 //-----------------------------
 |11
 |April 26,29
-|*Ray marching* anchor:raymarch[]
+|*Graphics Pipeline: Redux* anchor:pipeline2[]
 
-* Volumetric rendering, constructive solid geometry, shadertoy
+* Geometry processing, projections, clipping, rasterization, GPUs
 * link:project.html[Project details]
+* link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=92b6c1f8-26be-4f06-bcaf-ad1700cedcad[Lecture 4/27/2021]
 * Lab: Office Hours
 
 //-----------------------------
 |12
 |May 3,6
-|*Advanced shaders*
+|*Ray marching* anchor:raymarch[]
 
-* Potential topics: noise, non-photorealistic rendering, glow, BRDFs, HDR, shadows
+* Ray marching, signed-distance functions, constructive solid geometry, shadertoy
 * *May 3: Project ideas due* 
 * *May 6: Project presentations (in Lecture)* 
 * *May 6: Project proposals due* 
@@ -153,6 +154,7 @@ link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=0a657d1c-9
 |May 10,13
 |*Advanced topics*
 
-* Potential topics: BRDFs, procedural modeling
+* Potential topics: noise, non-photorealistic rendering, glow, BRDFs, HDR, shadows
+* Potential topics: procedural modeling
 
 |===
