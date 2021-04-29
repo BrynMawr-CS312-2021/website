@@ -127,6 +127,8 @@ link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=0a657d1c-9
 * Billboards, sprites, textures, alpha blending and transparency
 * link:asst05.html[Assignment 5] is due April 29 at midnight
 * link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=e2dbbdf3-c6e6-4c96-ac0d-ad0f0162b477[Lecture 4/19/2021]
+* Reference link:https://web.mat.upc.edu/toni.susin/files/BaraffWitkinKass2001.pdf[Rigid Body Dynamics (Chapter 2)]
+* Reference link:https://natureofcode.com/book/preface/[Nature of code]
 * Lab: Office Hours
 
 //-----------------------------
@@ -134,17 +136,18 @@ link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=0a657d1c-9
 |April 26,29
 |*Graphics Pipeline: Redux* anchor:pipeline2[]
 
-* Geometry processing, projections, clipping, rasterization, GPUs
+* Geometry processing, projections, clipping, rasterization
 * link:project.html[Project details]
-* link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=92b6c1f8-26be-4f06-bcaf-ad1700cedcad[Lecture 4/27/2021]
+* link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=92b6c1f8-26be-4f06-bcaf-ad1700cedcad[Lecture 4/27/2021],
+link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=e42fe6d1-0631-419f-90d2-ad1901546b59[Lecture 4/29/2021]
 * Lab: Office Hours
 
 //-----------------------------
 |12
 |May 3,6
-|*Ray marching* anchor:raymarch[]
+|*Advanced topics*
 
-* Ray marching, signed-distance functions, constructive solid geometry, shadertoy
+* Potential topics: procedural modeling and animation, noise 
 * *May 3: Project ideas due* 
 * *May 6: Project presentations (in Lecture)* 
 * *May 6: Project proposals due* 
@@ -152,9 +155,8 @@ link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=0a657d1c-9
 //-----------------------------
 |13
 |May 10,13
-|*Advanced topics*
+|*Ray marching* anchor:raymarch[]
 
-* Potential topics: noise, non-photorealistic rendering, glow, BRDFs, HDR, shadows
-* Potential topics: procedural modeling
+* Ray marching, signed-distance functions, constructive solid geometry, shadertoy
 
 |===
