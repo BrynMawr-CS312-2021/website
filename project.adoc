@@ -61,7 +61,7 @@ The following references might also help you come up with ideas
 
 = Project proposal
 
-*Due May 6th*
+*Due May 10th*
 
 Your project proposal should include:
 
@@ -75,7 +75,7 @@ Your project proposal should include:
 
 Your project presentation:
 
-* 10 minutes
+* 5 minutes
 * should summarize the project idea and describe the underlying algorithms, data structures, and underlying math needed for your project. 
 * on Zoom, during lecture: 1:10pm-2:30pm
 
