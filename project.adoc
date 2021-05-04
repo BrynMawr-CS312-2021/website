@@ -75,7 +75,7 @@ Your project proposal should include:
 
 Your project presentation:
 
-* 5 minutes
+* *5 minutes*
 * should summarize the project idea and describe the underlying algorithms, data structures, and underlying math needed for your project. 
 * on Zoom, during lecture: 1:10pm-2:30pm
 

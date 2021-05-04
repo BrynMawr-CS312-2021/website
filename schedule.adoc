@@ -145,18 +145,24 @@ link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=e42fe6d1-0
 //-----------------------------
 |12
 |May 3,6
-|*Advanced topics*
+|*Procedural modeling* anchor:procedural[]
 
-* Potential topics: procedural modeling and animation, noise 
+* Potential topics: procedural modeling
+* Ray marching, signed-distance functions, constructive solid geometry, shadertoy, noise
+* link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=379590dc-859f-4567-894b-ad1e00e0a5a9[Lecture 5/3/2021]
 * *May 3: Project ideas due* 
-* *May 6: Project presentations (in Lecture)* 
-* *May 6: Project proposals due* 
+* Reference link:http://algorithmicbotany.org/[Plants]
+* Reference link:https://www.classes.cs.uchicago.edu/archive/2015/fall/23700-1/final-project/MusgraveTerrain00.pdf[Procedural terrains]
+* Reference link:https://dl.acm.org/doi/10.1145/1179352.1141931[Procedural modeling of buildings]
+* Reference link:https://www.cct.lsu.edu/~fharhad/ganbatte/siggraph2007/CD2/content/papers/088-neubert.pdf[Modeling trees with particle flows] 
+
 
 //-----------------------------
 |13
 |May 10,13
 |*Ray marching* anchor:raymarch[]
 
-* Ray marching, signed-distance functions, constructive solid geometry, shadertoy
+* *May 10: Project presentations (in Lecture, 5 min each)* 
+* *May 10: Project proposals due* 
 
 |===
