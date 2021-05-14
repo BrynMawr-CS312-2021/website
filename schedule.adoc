@@ -165,9 +165,10 @@ link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=e42fe6d1-0
 
 * *May 10: Project presentations (in Lecture, 5 min each)* 
 * *May 10: Project proposals due* 
-* Ray marching, signed-distance functions, noise
+* Ray marching, signed-distance functions
 * Reference link:https://thebookofshaders.com/[Book of Shaders]
 * Reference link:https://www.iquilezles.org/www/articles/distfunctions/distfunctions.htm[Signed-distance functions]
+* link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=774ed8d7-c80f-4037-ab58-ad2800e05ce3[Lecture 5/13/2021]
 
 
 |===
