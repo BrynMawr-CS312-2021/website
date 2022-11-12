@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 2.0.10">
+<meta name="generator" content="Asciidoctor 2.0.16">
 <title>Computer Graphics</title>
 <link rel="stylesheet" href="style/front.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -15,14 +15,14 @@
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
-<li><a href="#_announcements">Announcements</a></li>
-<li><a href="#_schedule"><strong>Schedule</strong></a></li>
 <li><a href="#_course_info">Course Info</a>
 <ul class="sectlevel2">
+<li><a href="#_course_preview">Course Preview</a></li>
 <li><a href="#_meeting_times">Meeting Times</a></li>
 </ul>
 </li>
 <li><a href="#_texts_and_software">Texts and software</a></li>
+<li><a href="#_schedule"><strong>Schedule</strong></a></li>
 <li><a href="#_grading_policies">Grading Policies</a>
 <ul class="sectlevel2">
 <li><a href="#_late_policy">Late Policy</a></li>
@@ -35,19 +35,173 @@
 </div>
 </div>
 <div id="content">
-<div class="sect1 anns">
-<h2 id="_announcements">Announcements</h2>
+<div class="sect1">
+<h2 id="_course_info">Course Info</h2>
 <div class="sectionbody">
-<div class="ulist unstyled">
-<ul class="unstyled">
+<div class="imageblock text-center">
+<div class="content">
+<img src="img/jadeDragonWithSand.jpg" alt="jadeDragonWithSand" width="600px">
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Welcome to CS312</strong>. An introduction to computer graphics. Computer graphics
+is a fundamental technology underlying many applications such as digital
+photography, film, video games, simulation, training, product design,
+architecture, and fabrication.</p>
+</div>
+<div class="paragraph">
+<p>In this class, we will study the fundamental algorithms and data structures
+used to generate images on a digital display. Students will learn multiple
+approaches for representing 3-dimensional objects and simulating lights and materials.</p>
+</div>
+<div class="paragraph">
+<p>Students will additionally gain experience programming with C++ and using git
+for source control. Students will also practice deriving the mathematical
+models that underlie common graphics algorithms. These skills will empower
+students to create their original digital artworks as part of assignments and
+the final project.</p>
+</div>
+<div class="paragraph">
+<p>Computer graphics is a multi-disciplinary subject, combining knowledge about
+hardware, design, physics, and linear algebra. Computer graphics can be a
+daunting subject because it draws on diverse knowledge and skills. But it
+also offers many opportunities and ways to succeed! You can focus on aesthetics,
+user experience, hardware performance, mathematics, or software algorithms.
+Not to mention how satisfying it is to see digitally bring your own ideas to life
+and be able to share them with others!</p>
+</div>
+<div class="sect2">
+<h3 id="_course_preview">Course Preview</h3>
+<div class="paragraph">
+<p>Below are examples from class demos and assignments.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<div class="title">Image filters. Learning goals include image-based filtering techniques.</div>
+<p><span class="image"><img src="img/soup.png" alt="soup" width="400px"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<div class="title">Mesh viewer. Learning goals include meshes and phong shading.</div>
+<p><span class="image"><img src="img/cow.png" alt="cow" width="400px"></span></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<div class="title">Fire. Learning goals include particle systems, billboards, and glow rendering techniques.</div>
+<p><span class="image"><img src="img/fire.png" alt="fire" width="400px"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<div class="title">Path tracing. Learning goals include intersection testing, ray casting, and materials.</div>
+<p><span class="image"><img src="img/materials.png" alt="materials" width="400px"></span></p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_meeting_times">Meeting Times</h3>
+<table class="tableblock frame-all grid-all fit-content center">
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Activity</th>
+<th class="tableblock halign-left valign-top">Location</th>
+<th class="tableblock halign-left valign-top">Time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Lecture</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Zoom (See Slack for link)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Monday, Thursday, 1:10-2:30pm</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Lab</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Zoom (see Slack for link)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Thursday, 2:40-3:30pm</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Office Hours</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">By Appointment</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sign-up on calend.ly</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_texts_and_software">Texts and software</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Texts</strong></p>
+</div>
+<div class="paragraph">
+<p>Some lecture material will be based on information from the following textbooks:</p>
+</div>
+<div class="paragraph">
+<p>Real-Time Rendering, Fourth Edition 4th Edition,
+by Tomas Akenine-Mo¨ller, Eric Haines, Naty Hoffman
+(available as an e-book at the library)</p>
+</div>
+<div class="paragraph">
+<p>Fundamentals of Computer Graphics 4th Edition, by Steve Marschner, Peter Shirley</p>
+</div>
+<div class="paragraph">
+<p><strong>References</strong></p>
+</div>
+<div class="ulist">
+<ul>
 <li>
-<p>Topic this week: <a href="#procedural">Procedural modeling</a></p>
+<p><strong>GLFW</strong> <a href="https://www.glfw.org/documentation">Documentation</a></p>
 </li>
 <li>
-<p><a href="project.html">Final project</a>. Project presentations will be <strong>May 19th, 9:30am-12:30pm</strong>. Projects are due <strong>May 20th</strong>.</p>
+<p><strong>OpenGL</strong> <a href="https://www.khronos.org/registry/OpenGL/specs/gl/glspec46.core.pdf">Specification</a></p>
 </li>
 <li>
-<p>All resubmissions due: <strong>May 22 for seniors</strong> and <strong>May 27th for non-seniors</strong></p>
+<p><strong>GLSL</strong> <a href="https://www.khronos.org/registry/OpenGL/specs/gl/GLSLangSpec.4.60.pdf">Specification</a></p>
+</li>
+<li>
+<p><strong>GLM</strong> <a href="https://glm.g-truc.net/0.9.9/index.html">Project Page</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Software</strong></p>
+</div>
+<div class="paragraph">
+<p>The Bryn Mawr labs have the following software setup. Students may use the
+computers in Park 230 (Windows/Linux) and 231 (macOS).</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Github Account</strong> Please go to <a href="https://github.com/">github.com</a> and register. You will be using github to submit assignments.</p>
+</li>
+<li>
+<p><strong>Slack</strong> Please go to <a href="https://slack.com/signin">slack.com</a>. Our workspace is BrynMawr-CS312-S21. You can ask questions and request one-on-one help over zoom using this course&#8217;s slack channel.</p>
+</li>
+<li>
+<p><strong>C++ development environment</strong> Please follow the instructions at <a href="https://github.com/BrynMawr-CS312-2021/cplusplus-beginners">cplusplus-beginners</a></p>
+</li>
+<li>
+<p><strong>Graphics development environment</strong> Please follow the instructions at <a href="https://github.com/BrynMawr-CS312-2021/getting-started">getting-started</a></p>
+</li>
+<li>
+<p><strong>Blender (Optional)</strong> Please go to <a href="https://blender.org">blender.org</a>. Blender is an open-source 3D modeling tool and advanced renderer. We will occasionally use blender to inspect and edit models and materials.</p>
+</li>
+<li>
+<p><strong>Gimp (Optional)</strong> Please go to <a href="https://gimp.org">gimp.org</a>. Gimp is an open-source image manipulation tol, similar to Photoshop. Photoshop is also fine to use if you are familiar with it. We will occasionally use this program to edit images and generate textures.</p>
 </li>
 </ul>
 </div>
@@ -113,7 +267,7 @@ on lecture content, worksheets, and assignments.</p>
 <p><a href="https://www.cplusplus.com/doc/tutorial/arrays/">C++ arrays</a></p>
 </li>
 <li>
-<p><a href="asst00.html">Assignment 0</a> is due February 25 at midnight</p>
+<p><a href="asst00.html">Assignment 00: Hello, CS312!</a> is due February 25 at midnight</p>
 </li>
 <li>
 <p>Read: Marschner and Shirley, Chapter 3, Sections 8.1.1, 8.1.2</p>
@@ -146,7 +300,7 @@ on lecture content, worksheets, and assignments.</p>
 <p>Read: Marschner and Shirley, Sections 8.1.1, 8.1.2</p>
 </li>
 <li>
-<p><a href="asst01.html">Assignment 1</a> is due March 8 at midnight</p>
+<p><a href="asst01.html">Assignment 01: By the power of grayscale</a> is due March 8 at midnight</p>
 </li>
 <li>
 <p>Lab: Office Hours</p>
@@ -176,7 +330,7 @@ on lecture content, worksheets, and assignments.</p>
 <p>Read: <a href="https://raytracing.github.io/books/RayTracingInOneWeekend.html">Ray Tracing in one weekend</a>: Sec 6-10</p>
 </li>
 <li>
-<p><a href="asst02.html">Assignment 2</a> is due March 18 at midnight</p>
+<p><a href="asst02.html">Assignment 02: Green eggs and Bresenham</a> is due March 18 at midnight</p>
 </li>
 <li>
 <p><a href="https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=3fccddbe-da76-4013-a909-ace501799ad7">Lecture 3/8/2021</a>,
@@ -236,7 +390,7 @@ on lecture content, worksheets, and assignments.</p>
 <p><strong>Math jam</strong>: Points, vectors, dot product, intersection testing</p>
 </li>
 <li>
-<p><a href="asst03.html">Assignment 3</a> is due April 5 at midnight</p>
+<p><a href="asst03.html">Assignment 03: It&#8217;s a material world</a> is due April 5 at midnight</p>
 </li>
 <li>
 <p><a href="https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=def03d8c-0612-4295-9225-acf30160c8ef">Lecture 3/22/2021</a>,
@@ -307,7 +461,7 @@ on lecture content, worksheets, and assignments.</p>
 <p>Topics: model-view-projection matrix, mesh representations, shaders, texturing</p>
 </li>
 <li>
-<p><a href="asst04.html">Assignment 4</a> is due April 19 at midnight</p>
+<p><a href="asst04.html">Assignment 04: Give it your best PLY</a> is due April 19 at midnight</p>
 </li>
 <li>
 <p>Read <a href="http://www.opengl-tutorial.org/intermediate-tutorials/tutorial-9-vbo-indexing/">Meshes: VBO Indexing</a></p>
@@ -346,7 +500,7 @@ on lecture content, worksheets, and assignments.</p>
 <p>Billboards, sprites, textures, alpha blending and transparency</p>
 </li>
 <li>
-<p><a href="asst05.html">Assignment 5</a> is due April 29 at midnight</p>
+<p><a href="asst05.html">Assignment 05: Special effects</a> is due April 29 at midnight</p>
 </li>
 <li>
 <p><a href="https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=e2dbbdf3-c6e6-4c96-ac0d-ad0f0162b477">Lecture 4/19/2021</a></p>
@@ -454,144 +608,6 @@ on lecture content, worksheets, and assignments.</p>
 </tr>
 </tbody>
 </table>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_course_info">Course Info</h2>
-<div class="sectionbody">
-<div class="imageblock text-center">
-<div class="content">
-<img src="img/jadeDragonWithSand.jpg" alt="jadeDragonWithSand" width="600px">
-</div>
-</div>
-<div class="paragraph">
-<p><strong>Welcome to CS312</strong>. An introduction to computer graphics. Computer graphics
-is a fundamental technology underlying many applications such as digital
-photography, film, video games, simulation, training, product design,
-architecture, and fabrication.</p>
-</div>
-<div class="paragraph">
-<p>In this class, we will study the fundamental algorithms and data structures
-used to generate images on a digital display. Students will learn multiple
-approaches for representing 3-dimensional objects and simulating lights and materials.</p>
-</div>
-<div class="paragraph">
-<p>Students will additionally gain experience programming with C++ and using git
-for source control. Students will also practice deriving the mathematical
-models that underlie common graphics algorithms. These skills will empower
-students to create their original digital artworks as part of assignments and
-the final project.</p>
-</div>
-<div class="paragraph">
-<p>Computer graphics is a multi-disciplinary subject, combining knowledge about
-hardware, design, physics, and linear algebra. Computer graphics can be a
-daunting subject because it draws on diverse knowledge and skills. But it
-also offers many opportunities and ways to succeed! You can focus on aesthetics,
-user experience, hardware performance, mathematics, or software algorithms.
-Not to mention how satisfying it is to see digitally bring your own ideas to life
-and be able to share them with others!</p>
-</div>
-<div class="sect2">
-<h3 id="_meeting_times">Meeting Times</h3>
-<table class="tableblock frame-all grid-all fit-content center">
-<colgroup>
-<col>
-<col>
-<col>
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">Activity</th>
-<th class="tableblock halign-left valign-top">Location</th>
-<th class="tableblock halign-left valign-top">Time</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Lecture</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Zoom (See Slack for link)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Monday, Thursday, 1:10-2:30pm</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Lab</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Zoom (see Slack for link)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Thursday, 2:40-3:30pm</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Office Hours</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">By Appointment</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Sign-up on calend.ly</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_texts_and_software">Texts and software</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p><strong>Texts</strong></p>
-</div>
-<div class="paragraph">
-<p>Some lecture material will be based on information from the following textbooks:</p>
-</div>
-<div class="paragraph">
-<p>Real-Time Rendering, Fourth Edition 4th Edition,
-by Tomas Akenine-Mo¨ller, Eric Haines, Naty Hoffman
-(available as an e-book at the library)</p>
-</div>
-<div class="paragraph">
-<p>Fundamentals of Computer Graphics 4th Edition, by Steve Marschner, Peter Shirley</p>
-</div>
-<div class="paragraph">
-<p><strong>References</strong></p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><strong>GLFW</strong> <a href="https://www.glfw.org/documentation">Documentation</a></p>
-</li>
-<li>
-<p><strong>OpenGL</strong> <a href="https://www.khronos.org/registry/OpenGL/specs/gl/glspec46.core.pdf">Specification</a></p>
-</li>
-<li>
-<p><strong>GLSL</strong> <a href="https://www.khronos.org/registry/OpenGL/specs/gl/GLSLangSpec.4.60.pdf">Specification</a></p>
-</li>
-<li>
-<p><strong>GLM</strong> <a href="https://glm.g-truc.net/0.9.9/index.html">Project Page</a></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><strong>Software</strong></p>
-</div>
-<div class="paragraph">
-<p>The Bryn Mawr labs have the following software setup. Students may use the
-computers in Park 230 (Windows/Linux) and 231 (macOS).</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><strong>Github Account</strong> Please go to <a href="https://github.com/">github.com</a> and register. You will be using github to submit assignments.</p>
-</li>
-<li>
-<p><strong>Slack</strong> Please go to <a href="https://slack.com/signin">slack.com</a>. Our workspace is BrynMawr-CS312-S21. You can ask questions and request one-on-one help over zoom using this course&#8217;s slack channel.</p>
-</li>
-<li>
-<p><strong>C++ development environment</strong> Please follow the instructions at <a href="https://github.com/BrynMawr-CS312-2021/cplusplus-beginners">cplusplus-beginners</a></p>
-</li>
-<li>
-<p><strong>Graphics development environment</strong> Please follow the instructions at <a href="https://github.com/BrynMawr-CS312-2021/getting-started">getting-started</a></p>
-</li>
-<li>
-<p><strong>Blender (Optional)</strong> Please go to <a href="https://blender.org">blender.org</a>. Blender is an open-source 3D modeling tool and advanced renderer. We will occasionally use blender to inspect and edit models and materials.</p>
-</li>
-<li>
-<p><strong>Gimp (Optional)</strong> Please go to <a href="https://gimp.org">gimp.org</a>. Gimp is an open-source image manipulation tol, similar to Photoshop. Photoshop is also fine to use if you are familiar with it. We will occasionally use this program to edit images and generate textures.</p>
-</li>
-</ul>
-</div>
 </div>
 </div>
 <div class="sect1">
@@ -752,7 +768,7 @@ Services website. (<a href="http://www.brynmawr.edu/access-services/" class="bar
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2021-05-14 09:53:08 -0400
+Last updated 2022-11-12 14:57:36 -0500
 </div>
 </div>
 </body>

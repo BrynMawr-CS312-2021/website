@@ -24,7 +24,7 @@
 
 * Topics: pixels, images, color, compositing, C++ classes, structs, pointers and arrays
 * link:https://www.cplusplus.com/doc/tutorial/arrays/[C++ arrays] 
-* link:asst00.html[Assignment 0] is due February 25 at midnight
+* link:asst00.html[Assignment 00: Hello, CS312!] is due February 25 at midnight
 * Read: Marschner and Shirley, Chapter 3, Sections 8.1.1, 8.1.2
 * Lab check-ins
 * link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=3ba6d828-70a7-4367-aa12-acd80027d82e[Lecture 2/22/2021],
@@ -38,7 +38,7 @@ link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6d2fc2e9-c
 * Topics: Lines, vectors, points, Bresenham's algorithm (midpoint method), Barycentric coordinates, Triangle/Polygon rasterization
 * Read: link:http://immersivemath.com/ila/index.html[Immersive Linear Algebra]:Chapter 2,3
 * Read: Marschner and Shirley, Sections 8.1.1, 8.1.2
-* link:asst01.html[Assignment 1] is due March 8 at midnight
+* link:asst01.html[Assignment 01: By the power of grayscale] is due March 8 at midnight
 * Lab: Office Hours
 * link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=a4a82bfc-aed4-440e-addf-acdf00091b05[Lecture 3/1/2021],
 link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=77bf6fd1-2cc9-4040-8dac-ace101837e15[Lecture 3/4/2021]
@@ -51,7 +51,7 @@ link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=77bf6fd1-2
 * Topics: Bresenham worksheet, piecewise-linear curves, sin, cos, interpolation
 * Topics: The ray tracing algorithm, points and vectors 
 * Read: link:https://raytracing.github.io/books/RayTracingInOneWeekend.html[Ray Tracing in one weekend]: Sec 6-10 
-* link:asst02.html[Assignment 2] is due March 18 at midnight
+* link:asst02.html[Assignment 02: Green eggs and Bresenham] is due March 18 at midnight
 * link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=3fccddbe-da76-4013-a909-ace501799ad7[Lecture 3/8/2021],
 link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=35e9145c-cdc2-437f-ab4d-acec00fbc721[Lecture 3/18/2021]
 
@@ -77,7 +77,7 @@ link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=35e9145c-c
 * Read: link:https://raytracing.github.io/books/RayTracingInOneWeekend.html[Ray Tracing in one weekend]: Sec 6-10 
 * Read link:http://immersivemath.com/ila/ch06_matrices/ch06.html[Immersice Linear Algebra]: Chapter 6 (Matrices)
 * *Math jam*: Points, vectors, dot product, intersection testing
-* link:asst03.html[Assignment 3] is due April 5 at midnight
+* link:asst03.html[Assignment 03: It's a material world] is due April 5 at midnight
 * link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=def03d8c-0612-4295-9225-acf30160c8ef[Lecture 3/22/2021],
 link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=a9da6110-bfe5-4c2a-ab12-acf7012e86aa[Lecture 3/25/2021]
 
@@ -109,7 +109,7 @@ link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=4a6f0b53-4
 |*Meshes* anchor:meshes[]
 
 * Topics: model-view-projection matrix, mesh representations, shaders, texturing
-* link:asst04.html[Assignment 4] is due April 19 at midnight
+* link:asst04.html[Assignment 04: Give it your best PLY] is due April 19 at midnight
 * Read link:http://www.opengl-tutorial.org/intermediate-tutorials/tutorial-9-vbo-indexing/[Meshes: VBO Indexing]
 * Read link:http://www.opengl-tutorial.org/beginners-tutorials/tutorial-3-matrices/[OpenGL Matrix tutorial]
 * Read link:https://people.inf.elte.hu/plisaai/pdf/David%20Wolff%20-%20OpenGL%204.0%20Shading%20Language%20Cookbook%20(2).pdf[OpenGL 4.0 Cookbook, Chpt 2]
@@ -125,7 +125,7 @@ link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=0a657d1c-9
 |*Particle systems* anchor:particles[]
 
 * Billboards, sprites, textures, alpha blending and transparency
-* link:asst05.html[Assignment 5] is due April 29 at midnight
+* link:asst05.html[Assignment 05: Special effects] is due April 29 at midnight
 * link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=e2dbbdf3-c6e6-4c96-ac0d-ad0f0162b477[Lecture 4/19/2021]
 * Reference link:https://web.mat.upc.edu/toni.susin/files/BaraffWitkinKass2001.pdf[Rigid Body Dynamics (Chapter 2)]
 * Reference link:https://natureofcode.com/book/preface/[Nature of code]
